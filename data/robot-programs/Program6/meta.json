@@ -1,0 +1,41 @@
+{
+    "id": 6,
+    "name": "Program6",
+    "robotType": "UR5",
+    "applicationType": "Pick and Place",
+    "gripperType": [
+        "3FG15",
+        "2FG7"
+    ],
+    "image": "Program6.png",
+    "dataAvailable": "Robot Operational Data | Event Data",
+    "components": "UR5 | Gripper 3FG15 | Gripper 2FG7 | CNC Machine",
+    "program": "Task2_B",
+    "additionalImage": "Program6_detail.png",
+    "totalRating": 0,
+    "ratingCount": 0,
+    "objectType": [
+        "Sphere"
+    ],
+    "objectWeight": 0,
+    "cncDoorControl": true,
+    "communicationType": "Digital IO",
+    "actions": [
+        "moveJ",
+        "release",
+        "moveL",
+        "grip",
+        "moveL",
+        "moveJ",
+        "moveL",
+        "grip",
+        "moveL",
+        "moveL",
+        "moveL",
+        "moveL",
+        "moveL",
+        "release",
+        "moveL",
+        "moveJ"
+    ]
+}

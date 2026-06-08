@@ -1,0 +1,35 @@
+{
+    "id": 4,
+    "name": "Program4",
+    "robotType": "UR20",
+    "applicationType": "Pick and Place",
+    "gripperType": [
+        "2FG7"
+    ],
+    "image": "Program4.png",
+    "dataAvailable": "Robot Operational Data",
+    "components": "UR5 | Gripper 2FG7",
+    "program": "Task1_D",
+    "additionalImage": "Program4_detail.png",
+    "totalRating": 0,
+    "ratingCount": 0,
+    "objectType": [
+        "Block"
+    ],
+    "objectWeight": 0,
+    "cncDoorControl": false,
+    "communicationType": "None",
+    "actions": [
+        "moveJ",
+        "moveL",
+        "release",
+        "moveL",
+        "grip",
+        "moveL",
+        "moveL",
+        "moveL",
+        "release",
+        "moveL",
+        "moveJ"
+    ]
+}

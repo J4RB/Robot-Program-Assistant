@@ -1,0 +1,42 @@
+\chapter{Introduction} \label{chapter:introduction}
+Industrial robotics has become a central component of modern automation systems, enabling high levels of precision and efficiency across domains such as assembly, packaging, logistics, and material handling. Advances in robotics and automation have contributed to a rapid global adoption of industrial robots, with more than 4.6 million robots operating in factories worldwide as of 2024 and annual installations exceeding 500,000 units for several consecutive years (2021-2024). \cite{IFR2025} This development reflects a broader industrial transition toward increasingly automated manufacturing.
+
+Despite these advances, the development of robotic applications remain challenging. Robot programming is often a time-consuming and specialized process that requires expertise in proprietary programming languages and vendor-specific systems. As a result, adapting or reprogramming robotic systems for new tasks can involve significant engineering effort and cost. These challenges limit the scalability and flexibility of industrial automation and have motivated growing interest in approaches that simplify and accelerate robot programming. \cite{FERA2024}
+
+One such initiative is the Fast and Efficient Robotic Automation via Reuse of Data (FERA) project, which investigates how existing robotic knowledge and program data can be reused to support the development of new automation solutions. \cite{FERA2024} Led by the University of Southern Denmark (SDU) in collaboration with industrial partners, including Universal Robots, the project aims to reduce programming effort, shorten development cycles, and lower implementation costs. Part of this effort is the development of a software platform that provides access to repositories of robotic programs and aims to enable improved reprogrammability and reuse across robotic applications.
+
+At the same time, recent advances in large language models (LLMs) have transformed the field of software engineering. LLMs have demonstrated strong capabilities in natural language understanding and code-related tasks. \cite{chen2021evaluating, austin2021program} These capabilities have changed how developers interact with software systems by enabling natural language interfaces for generating, understanding, and modifying code.
+
+The success of LLMs in software engineering suggests promising opportunities within robotic programming. By bridging human language and machine-executable instructions, LLMs may enable more intuitive interaction with robotic systems and reduce the technical barriers associated with robot programming. In this context, LLMs can support both comprehension and reprogrammability of robotic applications. They may assist users in understanding existing robot programs and documentation through summarization and explanation, while also enabling the generation or modification of robot code from high-level natural language instructions. Such capabilities align closely with the objectives of the FERA project, where effective reuse of robotic knowledge depends on making existing solutions accessible, understandable, and adaptable.
+
+However, applying LLMs within robotics also introduces significant challenges. Industrial robotic systems operate in constrained and safety-critical environments where reliability, correctness, and predictability are essential. Consequently, the integration of LLMs into robotic programming workflows requires careful consideration.
+
+
+\section{Problem Statement} \label{sec:introduction:problem-statement}
+This thesis investigates how large language models can be utilized to support natural language-based comprehension and reprogrammability of robotic programs, with a focus on leveraging existing data and documentation. By exploring methods for integrating LLMs with repositories of robotic knowledge, this thesis contributes (1) an architectural design exploration, that includes agentic retrieval augmented generation (RAG), in a constrained robotics domain, (2) an implemented prototype, and (3) an empirical user study that reveals specific limitations and design pitfalls of this approach.
+
+This thesis is guided by the following research question (RQ):
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ:} How can LLMs be used to support natural language-based comprehension and reprogrammability of robotic programs?}
+\end{adjustwidth}
+
+As well as the following sub research questions:
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ1:} How does the proposed system influence the correctness of comprehension of robotic programs?}
+\end{adjustwidth}
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ2:} How does the proposed system influence the time required for comprehension of robotic programs?}
+\end{adjustwidth}
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ3:} How does the proposed system influence the correctness of modification and reuse of robot programs?}
+\end{adjustwidth}
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ4:} How does the proposed system influence the time required in the modification and reuse of robot programs?}
+\end{adjustwidth}
+
+\section{Scope} \label{sec:introduction:scope}
+The scope of this thesis is shaped by practical constraints related to data availability and computational resources, which define what can realistically be explored within the context of this work.
+
+The project was expected to utilize the robotic program repository from the FERA project mentioned above. However, at the time of development, the repository was not yet available for use. Thus, this thesis is developed using a limited dataset of robotics programs that does not fully represent the diversity of robotic solutions. This severely limits the design approaches that can be explored and the evaluation of the developed system. In addition, computational constraints further bound the design space. Approaches that require significant resource demands are not aligned with the practical limits of this master's thesis project. As a result, the project aims to explore solutions that can operate within these constraints while still effectively leveraging the available data.
+
+The scope is further constrained to a specific robotics domain. The project focuses exclusively on robotic data originating from Universal Robots systems, as this is the data available within the project context. Consequently, the system is not intended to provide a general solution applicable to all robot brands, programming environments, or hardware configurations. Instead, it aims to investigate how the proposed concepts can be applied within a well-defined and consistent domain where data characteristics are known.

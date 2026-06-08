@@ -1,0 +1,26 @@
+# Backend Configuration
+
+llm:
+  model: "qwen3.5:9b"
+  base_url: "http://localhost:11434"
+  temperature: 0.3
+  # LLM model context window size (tokens).
+  context_window_tokens: 262144 # Qwen3.5 9B supports 256K context
+  # Cap generation to keep latency bounded
+  max_output_tokens: 2048
+  # Disable long internal reasoning traces for faster responses
+  reasoning: false
+  # Timeout for Ollama calls (seconds)
+  request_timeout_seconds: 60
+
+rag:
+  # Vector database collections
+  collections:
+    programs: "robot_programs"
+    program_code: "robot_program_code"
+    documentation: "documentation"
+
+# Conversation memory configuration
+memory:
+  # Fraction of LLM context window allocated to conversation history
+  max_memory_fraction: 0.20

@@ -1,0 +1,152 @@
+\chapter{Evaluation Protocol} \label{appendix:evaluation-protocol}
+
+\section{Introduction}
+The evaluation will focus on four research questions (RQ1, RQ2, RQ3, RQ4) that assess the correctness of comprehension, time required for completion of comprehension tasks, and the correctness and time required for modification and reuse of robot programs. The study design for evaluating the proposed system is structured to systematically assess its impact on the comprehension and modification of robotic programs. The evaluation will be conducted through a controlled user study, where participants will be tasked with comprehending and modifying robotic programs using both the proposed system and a traditional baseline approach.
+
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ1:} How does the proposed system influence the correctness of comprehension of robotic programs?}
+\end{adjustwidth}
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ2:} How does the proposed system influence the time required for comprehension of robotic programs?}
+\end{adjustwidth}
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ3:} How does the proposed system influence the correctness of modification and reuse of robot programs?}
+\end{adjustwidth}
+\begin{adjustwidth}{\indentWidthTwenty}{\indentWidthTwenty}
+    \textit{\textbf{RQ4:} How does the proposed system influence the time required in the modification and reuse of robot programs?}
+\end{adjustwidth}
+
+For the baseline approach, UR Studio will be used. UR Studio is a browser based simulation tool for UR robots created by Universal Robots. It provides a visual programming interface, similar to programming directly on the teach pendant, for creating and simulating robotic programs.
+
+\section{Study Design}
+The study employs a within-subjects design, where each participant will experience both conditions (proposed system and baseline) in a counterbalanced order to mitigate potential learning effects.
+
+To further mitigate learning effects, the evaluation consists of two phases for each condition: an exploration phase and a task phase.
+\begin{itemize}
+    \item \textbf{Exploration Phase:} In the exploration phase, participants will familiarize themselves with the system. This phase will involve guided walkthroughs and practice tasks to ensure that participants have a sufficient understanding of the condition before proceeding to the task phase.
+    \item \textbf{Task Phase:} In the task phase, participants will be given specific comprehension and modification tasks to complete using the assigned condition. The tasks will be designed to assess the research questions, with a focus on measuring correctness and time taken for both comprehension and modification activities.
+\end{itemize}
+
+
+\subsection{Pre-Study Survey}
+Before the study begins, participants will complete a pre-study survey to collect their perceived experience level with robotic programming and familiarity/use of AI-assistants. This information will be used to analyze potential correlations between participant characteristics and their performance in the study.
+
+
+\subsection{Task Design}
+The tasks will be designed to reflect realistic scenarios that users may encounter when working with robotic programs. They will be structured to evaluate both comprehension and modification aspects, with a focus on assessing the correctness of understanding and the efficiency of modifications.
+
+Two types of tasks will be included:
+\begin{itemize}
+    \item \textbf{Comprehension Tasks:} Participants will be asked to read and understand robotic programs, answer questions about their functionality, and identify key components and logic. The tasks will be designed to assess the depth of comprehension, the ability to extract relevant information from the programs and the time taken to complete the comprehension tasks.
+    \item \textbf{Modification Tasks:} Participants will be given specific requirements for modifying existing robotic programs. They will be tasked with making changes to the code to meet new specifications or adapt it to different contexts. The tasks will evaluate both the correctness of the modifications and the time taken to complete them.
+\end{itemize}
+
+Correctness will be assessed based on predefined criteria for each task. For the comprehension tasks, correctness will be measured based on whether participants select the correct answer for each multiple-choice question. Comprehension performance will be quantified using the number of correctly answered questions and the time taken to complete the tasks. For the modification tasks, correctness will be determined by whether the implemented modifications satisfy the specified task requirements without introducing functional errors. The modified programs will be evaluated against predefined expected outcomes, including successful execution of the intended behavior and preservation of existing functionality where applicable. Partial correctness will be considered for modifications that satisfy some, but not all, of the required changes.
+
+To further mitigate learning effects, the robot programs and the modification tasks will be designed to be sufficiently distinct across conditions, ensuring that participants cannot simply apply knowledge gained from one condition to the other.
+
+Combining the counterbalanced design with distinct task sets for each condition:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{0.1\textwidth} p{0.32\textwidth} p{0.32\textwidth}}
+        \hline
+                & \textbf{Condition 1}           & \textbf{Condition 2}           \\
+        \hline
+        Group 1 & Baseline + Task set \#1        & Proposed System + Task set \#2 \\
+        Group 2 & Proposed System + Task set \#1 & Baseline + Task set \#2        \\
+        \hline
+    \end{tabular}
+    \caption{Counterbalanced and learning mitigation design.}
+\end{table}
+
+\subsection{Metrics}
+The evaluation will utilize a combination of quantitative and qualitative metrics to assess the impact of the proposed system on comprehension and modification of robotic programs.
+
+Quantitative metrics will include:
+\begin{itemize}
+    \item \textbf{Correctness of Comprehension:} This will be measured by the number of correctly answered multiple-choice comprehension questions.
+    \item \textbf{Time for Comprehension:} The time taken by participants to complete the comprehension tasks will be recorded and analyzed.
+    \item \textbf{Correctness of Modifications:} The accuracy of modifications made by participants will be evaluated against predefined criteria based on the task requirements.
+    \item \textbf{Time for Modifications:} The time taken to complete modification tasks will be recorded and analyzed.
+    \item \textbf{Confidence Levels:} After each task completion, participants will be asked to rate their confidence in their comprehension and modifications on a Likert scale (1 to 5), providing insight into their subjective experience with the system.
+\end{itemize}
+
+Qualitative metrics will include:
+\begin{itemize}
+    \item \textbf{System-wide User Feedback:} Participants will be asked to provide feedback on their experience using the proposed system, including perceived usability, usefulness, and any challenges encountered during the tasks.
+    \item \textbf{LLM-assisted User Feedback:} Participants will be asked to provide specific feedback on the proposed system's LLM-assisted features, such as the quality of generated responses and the relevance of suggestions for modifications.
+    \item \textbf{Observational Data:} The evaluation will also include observational data collected during the study, such as participant behavior, interactions with the system, use of AI-assisted features, and any difficulties faced during comprehension and modification tasks.
+\end{itemize}
+
+
+\subsection{Participants}
+The study will recruit potential users of the proposed system, including robotics engineers and programmers who have experience working with robotic systems. Participants will be sourced from relevant industry professionals and academic institutions.
+
+
+\subsection{Questions}
+\subsubsection{Pre Study Questions}
+\begin{itemize}
+    \item How would you rate your experience level with robotic programming? (Likert scale 1-5)
+    \item How often do you use AI assistants for software development? (Likert scale 1-5)
+    \item I would use an AI assistant for developing robot programs? Explain why or why not? (Likert scale 1-5 + open-ended response)
+\end{itemize}
+
+\subsubsection{Task Questions}
+Comprehension Tasks:
+\begin{itemize}
+    \item Identify the key actions used in the robotic program. (Multiple choice)
+    \item Choose the correct sequence of actions in the order performed by the robot in the program. (Multiple choice)
+    \item Choose the correct sequence of waypoints in the order they are reached by the robot in the program. (Multiple choice)
+    \item Does the program use any URCap? (Multiple choice)
+    \item Which gripper does the program use? (Multiple choice)
+    \item Which of the following overall applications best match the program. (Multiple choice)
+    \item I feel confident in my program comprehension. (Likert scale 1-5)
+\end{itemize}
+
+Modification Tasks:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{0.01\textwidth} p{0.44\textwidth} p{0.44\textwidth}}
+        \hline
+           & \textbf{Task set \#1}                                      & \textbf{Task set \#2}                                      \\
+        \hline
+        1. & Change the speed of the first move action.                 & Change the speed of the last move action.                  \\
+        2. & Change the movement type of the last move action.          & Change the movement type of the first move action.         \\
+        3. & Switch the waypoints of the second and third move actions. & Switch the waypoints of the fourth and fifth move actions. \\
+        4. & Enable blend movement of the second move action.           & Enable blend movement of the third move action.            \\
+        5. & Add a wait action after the last move action.              & Add a wait action after the first move action.             \\
+        \hline
+    \end{tabular}
+    \caption{Modification task sets.}
+\end{table}
+
+\subsubsection{Post Study Questions}
+\begin{itemize}
+    \item The proposed system was easy to use. (Likert scale 1-5)
+    \item The proposed system was useful for robotic programming tasks. (Likert scale 1-5)
+
+    \item LLM-generated comprehension responses:
+          \begin{itemize}
+              \item The LLM-generated comprehension responses were of high quality. (Likert scale 1-5)
+              \item The LLM-generated comprehension responses were relevant to my query. (Likert scale 1-5)
+              \item The LLM-generated comprehension responses were clear and understandable. (Likert scale 1-5)
+              \item The LLM-generated comprehension responses were factually correct. (Likert scale 1-5)
+          \end{itemize}
+
+    \item LLM-generated modification suggestions:
+          \begin{itemize}
+              \item The LLM-generated modification suggestions were of high quality. (Likert scale 1-5)
+              \item The LLM-generated modification suggestions were relevant to the modification task. (Likert scale 1-5)
+              \item The LLM-generated modification suggestions were clear and understandable. (Likert scale 1-5)
+              \item The LLM-generated modification suggestions were factually correct. (Likert scale 1-5)
+          \end{itemize}
+
+    \item I felt confident in my program comprehension when using the proposed system. (Likert scale 1-5)
+    \item I felt confident in my program modifications when using the proposed system. (Likert scale 1-5)
+    \item I felt confident in my program comprehension when using the baseline approach. (Likert scale 1-5)
+    \item I felt confident in my program modifications when using the baseline approach. (Likert scale 1-5)
+
+    \item What challenges did you encounter while using the proposed system during the tasks? (Open-ended response)
+    \item Do you have any suggestions for improving the proposed system? (Open-ended response)
+    \item I would use the proposed system in my robotic programming work. Explain why or why not. (Likert scale 1-5 + open-ended response)
+\end{itemize}

@@ -1,0 +1,89 @@
+/* TreeView Component Styles - UR Program Structure */
+.tree-node-wrapper {
+  font-size: 0.875rem;
+  font-family: 'Menlo', 'Monaco', 'Ubuntu Mono', monospace;
+  user-select: none;
+  color: var(--text-primary);
+}
+
+.tree-node {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.25rem;
+  margin: 0.125rem 0;
+  border-radius: 0.25rem;
+  cursor: default;
+  transition: background-color 0.15s;
+  height: 1.5rem;
+}
+
+.tree-node:hover {
+  background-color: var(--background-light);
+}
+
+.tree-expand-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.25rem 0 0;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+
+.tree-expand-btn:hover {
+  color: var(--text-primary);
+}
+
+.tree-label {
+  color: var(--text-primary);
+  font-weight: 400;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
+
+.tree-node-label-button {
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+
+.tree-prefix {
+  color: var(--text-secondary);
+  user-select: none;
+  margin-left: 1.25rem;
+}
+
+.tree-children {
+  margin-top: 0.125rem;
+}
+
+/* Animation */
+.tree-node {
+  animation: slideIn 0.15s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

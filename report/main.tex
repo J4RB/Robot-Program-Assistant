@@ -1,0 +1,80 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{float}
+\usepackage{parskip}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{changepage}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage{catchfile}
+\usepackage{xfp}
+\usepackage{arydshln}
+\usepackage[toc,page]{appendix}
+
+% \usemintedstyle{borland}
+\renewcommand\listingscaption{Code}
+\newcommand\indentWidthTwenty{20pt}
+\newcommand\indentWidthForty{40pt}
+\setcounter{secnumdepth}{3}
+ 
+
+% Character and normal page count commands
+\newcommand{\CharCountValue}{0}
+\newcommand{\setcharcount}[1]{%
+	\immediate\write18{texcount -1 -sum -merge -char -nobib #1.tex > #1-charcount.sum}%
+	\CatchFileDef{\CharCountValue}{#1-charcount.sum}{}%
+}
+\newcommand{\pageestimate}{\fpeval{round(\CharCountValue/2400,2)}}
+
+
+\begin{document}
+
+\setcharcount{main}
+
+\input{pages/titlepage.tex}
+
+\input{pages/abstract.tex}
+\newpage
+
+%TC:ignore
+\tableofcontents
+%TC:endignore
+\newpage
+
+\input{pages/introduction.tex}
+\input{pages/background.tex}
+\input{pages/related-work.tex}
+\input{pages/analysis.tex}
+\input{pages/design.tex}
+\input{pages/implementation.tex}
+\input{pages/evaluation.tex}
+\input{pages/discussion.tex}
+\input{pages/conclusion.tex}
+
+\newpage
+%TC:ignore
+\bibliographystyle{unsrturl}
+\bibliography{references}
+%TC:endignore
+
+\newpage
+%TC:ignore
+\begin{appendices}
+    \input{pages/appendix/digital-appendix-overview.tex}
+    \input{pages/appendix/implementation-prompts.tex}
+    \input{pages/appendix/evaluation-protocol.tex}
+    \input{pages/appendix/evaluation-data.tex}
+\end{appendices}
+%TC:endignore
+
+\end{document}

@@ -1,0 +1,35 @@
+{
+    "id": 5,
+    "name": "Program5",
+    "robotType": "UR5",
+    "applicationType": "Pick and Place",
+    "gripperType": [
+        "3FG15"
+    ],
+    "image": "Program5.png",
+    "dataAvailable": "Robot Operational Data | Camera Data",
+    "components": "UR5 | Gripper 3FG15 | Camera",
+    "program": "Task2_A",
+    "additionalImage": "Program5_detail.png",
+    "totalRating": 0,
+    "ratingCount": 0,
+    "objectType": [
+        "Sphere"
+    ],
+    "objectWeight": 0,
+    "cncDoorControl": false,
+    "communicationType": "None",
+    "actions": [
+        "moveJ",
+        "release",
+        "moveL",
+        "grip",
+        "moveL",
+        "moveJ",
+        "moveJ",
+        "moveL",
+        "release",
+        "moveL",
+        "moveJ"
+    ]
+}

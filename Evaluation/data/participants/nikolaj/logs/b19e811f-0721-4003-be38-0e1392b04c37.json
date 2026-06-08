@@ -1,0 +1,807 @@
+{
+  "session_id": "b19e811f-0721-4003-be38-0e1392b04c37",
+  "start_time": "2026-05-18T21:49:28.781612+02:00",
+  "end_time": "2026-05-18T21:50:03.288882+02:00",
+  "event_count": 10,
+  "events": [
+    {
+      "timestamp": "2026-05-18T21:49:28.782358+02:00",
+      "type": "user_input",
+      "data": {
+        "query": "I need to switch these two waypoints",
+        "settings": {
+          "program_context": true,
+          "max_program_results": null,
+          "max_documentation_results": null,
+          "use_conversation_history": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:49:35.321327+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_programs",
+        "query": "UR Cap Universal Robots Capabilities",
+        "limit": 5,
+        "step": 1
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:49:39.461886+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_programs",
+        "query": "UR Cap Universal Robots Capabilities",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4140.3303146362305,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:49:39.463038+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_programs",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.6401566914455917,
+          "max": 0.6649537776971235,
+          "mean": 0.6550502617102906
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+            "score": 0.6649537776971235,
+            "source": "robot_programs",
+            "program_id": "Program2",
+            "program_name": "Program2",
+            "robot_type": "UR5",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program2",
+              "program_id": "Program2",
+              "program_name": "Program2",
+              "chunk_text": "Program: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 2,
+                "name": "Program2",
+                "robotType": "UR5",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "2FG7"
+                ],
+                "image": "Program2.png",
+                "dataAvailable": "Robot Operational Data | Event Data",
+                "components": "UR5 | Gripper 2FG7",
+                "program": "Task1_B",
+                "additionalImage": "Program2_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Cube"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR5",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.",
+            "score": 0.6618974368765304,
+            "source": "robot_programs",
+            "program_id": "Program5",
+            "program_name": "Program5",
+            "robot_type": "UR5",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program5",
+              "program_id": "Program5",
+              "program_name": "Program5",
+              "chunk_text": "Program: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 5,
+                "name": "Program5",
+                "robotType": "UR5",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15"
+                ],
+                "image": "Program5.png",
+                "dataAvailable": "Robot Operational Data | Camera Data",
+                "components": "UR5 | Gripper 3FG15 | Camera",
+                "program": "Task2_A",
+                "additionalImage": "Program5_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Sphere"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR5",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.",
+            "score": 0.6606808371588526,
+            "source": "robot_programs",
+            "program_id": "Program4",
+            "program_name": "Program4",
+            "robot_type": "UR20",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program4",
+              "program_id": "Program4",
+              "program_name": "Program4",
+              "chunk_text": "Program: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 4,
+                "name": "Program4",
+                "robotType": "UR20",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "2FG7"
+                ],
+                "image": "Program4.png",
+                "dataAvailable": "Robot Operational Data",
+                "components": "UR5 | Gripper 2FG7",
+                "program": "Task1_D",
+                "additionalImage": "Program4_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Block"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR20",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+            "score": 0.6475625653733547,
+            "source": "robot_programs",
+            "program_id": "Program7",
+            "program_name": "Program7",
+            "robot_type": "UR3",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program7",
+              "program_id": "Program7",
+              "program_name": "Program7",
+              "chunk_text": "Program: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 7,
+                "name": "Program7",
+                "robotType": "UR3",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15",
+                  "2FG7"
+                ],
+                "image": "Program7.png",
+                "dataAvailable": "Robot Operational Data | Event Data",
+                "components": "UR5 | Gripper 3FG15 | Gripper 2FG7",
+                "program": "Task2_C",
+                "additionalImage": "Program7_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Cylinder",
+                  "Cube"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR3",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program3. Robot type: UR30. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15. Data available: Robot Operational Data.",
+            "score": 0.6401566914455917,
+            "source": "robot_programs",
+            "program_id": "Program3",
+            "program_name": "Program3",
+            "robot_type": "UR30",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program3",
+              "program_id": "Program3",
+              "program_name": "Program3",
+              "chunk_text": "Program: Program3. Robot type: UR30. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15. Data available: Robot Operational Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 3,
+                "name": "Program3",
+                "robotType": "UR30",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15"
+                ],
+                "image": "Program3.png",
+                "dataAvailable": "Robot Operational Data",
+                "components": "UR5 | Gripper 3FG15",
+                "program": "Task1_C",
+                "additionalImage": "Program3_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Sphere"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR30",
+              "application_type": "Pick and Place"
+            }
+          }
+        ],
+        "step": 1,
+        "result_time_ms": 4141.43705368042
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:49:45.705167+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_programs",
+        "query": "UR Cap Universal Robots Capabilities",
+        "limit": 5,
+        "step": 2
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:49:49.887275+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_programs",
+        "query": "UR Cap Universal Robots Capabilities",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4181.887626647949,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:49:49.888246+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_programs",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.6401566914455917,
+          "max": 0.6649537776971235,
+          "mean": 0.6550502617102906
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+            "score": 0.6649537776971235,
+            "source": "robot_programs",
+            "program_id": "Program2",
+            "program_name": "Program2",
+            "robot_type": "UR5",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program2",
+              "program_id": "Program2",
+              "program_name": "Program2",
+              "chunk_text": "Program: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 2,
+                "name": "Program2",
+                "robotType": "UR5",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "2FG7"
+                ],
+                "image": "Program2.png",
+                "dataAvailable": "Robot Operational Data | Event Data",
+                "components": "UR5 | Gripper 2FG7",
+                "program": "Task1_B",
+                "additionalImage": "Program2_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Cube"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR5",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.",
+            "score": 0.6618974368765304,
+            "source": "robot_programs",
+            "program_id": "Program5",
+            "program_name": "Program5",
+            "robot_type": "UR5",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program5",
+              "program_id": "Program5",
+              "program_name": "Program5",
+              "chunk_text": "Program: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 5,
+                "name": "Program5",
+                "robotType": "UR5",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15"
+                ],
+                "image": "Program5.png",
+                "dataAvailable": "Robot Operational Data | Camera Data",
+                "components": "UR5 | Gripper 3FG15 | Camera",
+                "program": "Task2_A",
+                "additionalImage": "Program5_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Sphere"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR5",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.",
+            "score": 0.6606808371588526,
+            "source": "robot_programs",
+            "program_id": "Program4",
+            "program_name": "Program4",
+            "robot_type": "UR20",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program4",
+              "program_id": "Program4",
+              "program_name": "Program4",
+              "chunk_text": "Program: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 4,
+                "name": "Program4",
+                "robotType": "UR20",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "2FG7"
+                ],
+                "image": "Program4.png",
+                "dataAvailable": "Robot Operational Data",
+                "components": "UR5 | Gripper 2FG7",
+                "program": "Task1_D",
+                "additionalImage": "Program4_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Block"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR20",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+            "score": 0.6475625653733547,
+            "source": "robot_programs",
+            "program_id": "Program7",
+            "program_name": "Program7",
+            "robot_type": "UR3",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program7",
+              "program_id": "Program7",
+              "program_name": "Program7",
+              "chunk_text": "Program: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 7,
+                "name": "Program7",
+                "robotType": "UR3",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15",
+                  "2FG7"
+                ],
+                "image": "Program7.png",
+                "dataAvailable": "Robot Operational Data | Event Data",
+                "components": "UR5 | Gripper 3FG15 | Gripper 2FG7",
+                "program": "Task2_C",
+                "additionalImage": "Program7_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Cylinder",
+                  "Cube"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR3",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program3. Robot type: UR30. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15. Data available: Robot Operational Data.",
+            "score": 0.6401566914455917,
+            "source": "robot_programs",
+            "program_id": "Program3",
+            "program_name": "Program3",
+            "robot_type": "UR30",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program3",
+              "program_id": "Program3",
+              "program_name": "Program3",
+              "chunk_text": "Program: Program3. Robot type: UR30. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15. Data available: Robot Operational Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 3,
+                "name": "Program3",
+                "robotType": "UR30",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15"
+                ],
+                "image": "Program3.png",
+                "dataAvailable": "Robot Operational Data",
+                "components": "UR5 | Gripper 3FG15",
+                "program": "Task1_C",
+                "additionalImage": "Program3_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Sphere"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR30",
+              "application_type": "Pick and Place"
+            }
+          }
+        ],
+        "step": 2,
+        "result_time_ms": 4182.8577518463135
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:49:57.358652+02:00",
+      "type": "llm_synthesis_prompt",
+      "data": {
+        "system_prompt": "Synthesis LLM prompt",
+        "user_query": "I need to switch these two waypoints",
+        "context": "## Retrieved Information:\n\n**Source 1 (robot_programs):**\nProgram: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.\n\n**Source 2 (robot_programs):**\nProgram: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.\n\n**Source 3 (robot_programs):**\nProgram: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.\n\n**Source 4 (robot_programs):**\nProgram: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.\n\n**Source 5 (robot_programs):**\nProgram: Program3. Robot type: UR30. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15. Data available: Robot Operational Data.\n\n**Source 6 (robot_programs):**\nProgram: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.\n\n**Source 7 (robot_programs):**\nProgram: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.\n\n**Source 8 (robot_programs):**\nProgram: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.\n\n**Source 9 (robot_programs):**\nProgram: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.\n\n**Source 10 (robot_programs):**\nProgram: Program3. Robot type: UR30. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15. Data available: Robot Operational Data.\n\n## Provided Program Context:\n            {\n              \"children\": [],\n              \"contributedNode\": {\n                \"version\": \"0.0.4\",\n                \"type\": \"ur-move-to\",\n                \"allowsChildren\": false,\n                \"parameters\": {\n                  \"moveType\": \"moveL\",\n                  \"variable\": {\n                    \"entity\": {\n                      \"name\": \"Point_1\",\n                      \"reference\": true,\n                      \"type\": \"$$Variable\",\n                      \"valueType\": \"waypoint\"\n                    },\n                    \"selectedType\": \"VARIABLE\",\n                    \"value\": \"Point_1\"\n                  },\n                  \"waypoint\": {\n                    \"frame\": \"base\",\n                    \"tcp\": {\n                      \"name\": \"Tool_flange\",\n                      \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n                    },\n                    \"qNear\": {\n                      \"base\": -0.6432960669146937,\n                      \"shoulder\": -1.5531082910350342,\n                      \"elbow\": 2.217769447957174,\n                      \"wrist1\": -3.200841089288229,\n                      \"wrist2\": -2.039377037678854,\n                      \"wrist3\": 1.9576576948165894\n                    },\n                    \"pose\": {\n                      \"x\": {\n                        \"entity\": {\n                          \"value\": -0.4102119496366306,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -0.4102119496366306\n                      },\n                      \"y\": {\n                        \"entity\": {\n                          \"value\": 0.196025160532814,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 0.196025160532814\n                      },\n                      \"z\": {\n                        \"entity\": {\n                          \"value\": 0.37646586444283336,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 0.37646586444283336\n                      },\n                      \"rx\": {\n                        \"entity\": {\n                          \"value\": 2.657293400750332,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 2.657293400750332\n                      },\n                      \"ry\": {\n                        \"entity\": {\n                          \"value\": -1.960867027891352,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -1.960867027891352\n                      },\n                      \"rz\": {\n                        \"entity\": {\n                          \"value\": -1.6073977955739192,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -1.6073977955739192\n                      }\n                    }\n                  },\n                  \"advanced\": {\n                    \"speed\": {\n                      \"speed\": {\n                        \"entity\": {\n                          \"value\": 0.25,\n                          \"unit\": \"m/s\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 0.25\n                      },\n                      \"acceleration\": {\n                        \"entity\": {\n                          \"value\": 1.2,\n                          \"unit\": \"m/s^2\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 1.2\n                      },\n                      \"motionValue\": \"OptiMove\",\n                      \"optiMoveSpeed\": 30,\n                      \"optiMoveAcceleration\": 9\n                    },\n                    \"blend\": {\n                      \"enabled\": false\n                    },\n                    \"transform\": {\n                      \"transform\": false\n                    }\n                  }\n                }\n              },\n              \"guid\": \"1b7b7634-65c2-d68f-438a-8942f803df46\",\n              \"parentId\": \"51014c7b-36fc-646d-81ad-3b1bba1003df\",\n              \"programLabel\": [\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.name.variable\",\n                  \"interpolateParams\": {\n                    \"variableName\": \"Point_1\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.linear\"\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.speed\",\n                  \"interpolateParams\": {\n                    \"speed\": \"30 %\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.acceleration\",\n                  \"interpolateParams\": {\n                    \"acceleration\": \"9 %\"\n                  }\n                }\n              ]\n            },\n            {\n              \"children\": [],\n              \"contributedNode\": {\n                \"version\": \"0.0.4\",\n                \"type\": \"ur-move-to\",\n                \"allowsChildren\": false,\n                \"parameters\": {\n                  \"moveType\": \"moveJ\",\n                  \"variable\": {\n                    \"entity\": {\n                      \"name\": \"Intermittent\",\n                      \"reference\": false,\n                      \"type\": \"$$Variable\",\n                      \"valueType\": \"waypoint\",\n                      \"declaredByID\": \"1418b390-7c75-8fed-ade9-7281290f8abe\"\n                    },\n                    \"selectedType\": \"VALUE\",\n                    \"value\": \"Intermittent\"\n                  },\n                  \"waypoint\": {\n                    \"frame\": \"base\",\n                    \"tcp\": {\n                      \"name\": \"Tool_flange\",\n                      \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n                    },\n                    \"qNear\": {\n                      \"base\": 0.0482884906232357,\n                      \"shoulder\": -2.278511186639303,\n                      \"elbow\": 2.435761276875631,\n                      \"wrist1\": -2.634407182733053,\n                      \"wrist2\": -2.072821919118063,\n                      \"wrist3\": 2.0103752613067627\n                    },\n                    \"pose\": {\n                      \"x\": {\n                        \"entity\": {\n                          \"value\": -0.2369322679328399,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -0.2369322679328399\n                      },\n                      \"y\": {\n                        \"entity\": {\n                          \"value\": -0.09737804326246172,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -0.09737804326246172\n                      },\n                      \"z\": {\n                        \"entity\": {\n                          \"value\": 0.44808151739746016,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 0.44808151739746016\n                      },\n                      \"rx\": {\n                        \"entity\": {\n                          \"value\": 2.8303438643499166,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 2.8303438643499166\n                      },\n                      \"ry\": {\n                        \"entity\": {\n                          \"value\": -0.9293751031276849,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -0.9293751031276849\n                      },\n                      \"rz\": {\n                        \"entity\": {\n                          \"value\": -1.5856380630674063,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -1.5856380630674063\n                      }\n                    }\n                  },\n                  \"advanced\": {\n                    \"speed\": {\n                      \"speed\": {\n                        \"entity\": {\n                          \"value\": 1.04719755,\n                          \"unit\": \"rad/s\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 1.04719755\n                      },\n                      \"acceleration\": {\n                        \"entity\": {\n                          \"value\": 1.3962633999999998,\n                          \"unit\": \"rad/s^2\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 1.3962633999999998\n                      },\n                      \"motionValue\": \"OptiMove\",\n                      \"optiMoveSpeed\": 30,\n                      \"optiMoveAcceleration\": 9\n                    },\n                    \"blend\": {\n                      \"enabled\": false\n                    },\n                    \"transform\": {\n                      \"transform\": false\n                    }\n                  }\n                }\n              },\n              \"guid\": \"1418b390-7c75-8fed-ade9-7281290f8abe\",\n              \"parentId\": \"51014c7b-36fc-646d-81ad-3b1bba1003df\",\n              \"programLabel\": [\n                {\n                  \"type\": \"primary\",\n                  \"translationKey\": \"program-node-label.move-to.name.default\",\n                  \"interpolateParams\": {\n                    \"name\": \"Intermittent\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.joint\"\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.single-value\",\n                  \"interpolateParams\": {\n                    \"value\": \"base\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.single-value\",\n                  \"interpolateParams\": {\n                    \"value\": \"Tool_flange\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.speed\",\n                  \"interpolateParams\": {\n                    \"speed\": \"30 %\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.acceleration\",\n                  \"interpolateParams\": {\n                    \"acceleration\": \"9 %\"\n                  }\n                }\n              ]\n            },",
+        "context_length": 14616,
+        "history": [
+          "User: Does this program use any URCap?",
+          "Assistant: ## Answer",
+          "",
+          "Yes, the program uses **UR Cap** (Universal Robots Capabilities) and relies on the **UR-URcap** module.",
+          "",
+          "### Evidence from the Context",
+          "",
+          "1.  **Module Identification**: The program explicitly uses the `onrobot-urcap-program` node type.",
+          "    *   **Source 1 (Program7)**: Shows a node labeled \"2FG7 (1) - grip\" with `node_type: \"onrobot-urcap-program\"`.",
+          "    *   **Source 2 (Program5)**: Shows a node labeled \"3FG15 (2) - grip\" with `node_type: \"onrobot-urcap-program\"`.",
+          "    *   **Source 3 (Prog"
+        ],
+        "history_length": 11
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:50:03.288774+02:00",
+      "type": "llm_response",
+      "data": {
+        "response_text": "## Answer\n\nTo switch the waypoints in your UR robot program, you need to modify the `waypoint` parameter within the `ur-move-to` node configuration. Based on the provided context, here is how the waypoint switching is structured and what you need to change.\n\n### Current Program Structure\nThe program consists of two `ur-move-to` nodes:\n\n1.  **Waypoint 1 (Point_1)**:\n    *   **Type**: Move Linear (moveL)\n    *   **Current Waypoint**: `Point_1`\n    *   **Pose**: Defined in the `waypoint` parameter (Frame: base, Tool_flange).\n    *   **Advanced Settings**: Speed 0.25 m/s, Acceleration 1.2 m/s².\n\n2.  **Waypoint 2 (Intermittent)**:\n    *   **Type**: Move Joint (moveJ)\n    *   **Current Waypoint**: `Intermittent`\n    *   **Pose**: Defined in the `waypoint` parameter (Frame: base, Tool_flange).\n    *   **Advanced Settings**: Speed 1.047 rad/s, Acceleration 1.396 rad/s².\n\n### How to Switch Waypoints\nTo switch from the first waypoint to the second, you must update the `waypoint` value in the `contributedNode` parameters of the `ur-move-to` node.\n\n#### Step 1: Update the Waypoint Name\nChange the `waypoint` parameter from `Point_1` to `Intermittent`.\n\n**Example Configuration Change:**\n```json\n\"waypoint\": {\n  \"frame\": \"base\",\n  \"tcp\": {\n    \"name\": \"Tool_flange\",\n    \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n  },\n  \"qNear\": { ... },\n  \"pose\": { ... },\n  \"rx\": { ... },\n  \"ry\": { ... },\n  \"rz\": { ... }\n}\n```\n*Replace `\"Point_1\"` with `\"Intermittent\"`.*\n\n#### Step 2: Update Advanced Settings (Optional but Recommended)\nSince the second waypoint uses a different motion type (`moveJ` vs `moveL`), the advanced settings (speed and acceleration) might need adjustment to match the new motion profile.\n\n**Example Configuration Change for `moveJ`:**\n```json\n\"advanced\": {\n  \"speed\": {\n    \"speed\": {\n      \"entity\": {\n        \"value\": 1.04719755,\n        \"unit\": \"rad/s\"\n      },\n      \"selectedType\": \"VALUE\",\n      \"value\": 1.04719755\n    },\n    \"acceleration\": {\n      \"entity\": {\n        \"value\": 1.3962633999999998,\n        \"unit\": \"rad/s^2\"\n      },\n      \"selectedType\": \"VALUE\",\n      \"value\": 1.3962633999999998\n    },\n    \"motionValue\": \"OptiMove\",\n    \"optiMoveSpeed\": 30,\n    \"optiMoveAcceleration\": 9\n  },\n  \"blend\": {\n    \"enabled\": false\n  },\n  \"transform\": {\n    \"transform\": false\n  }\n}\n```\n*Note: If the robot requires different joint speeds or accelerations for the second waypoint, you should update the `speed` and `acceleration` values within the `advanced` section.*\n\n### Summary of Changes\n| Parameter | Current Value | New Value |\n| :--- | :--- | :--- |\n| **Waypoint Name** | `Point_1` | `Intermittent` |\n| **Motion Type** | `moveL` (Linear) | `moveJ` (Joint) |\n| **Speed** | 0.25 m/s | 1.047 rad/s |\n| **Acceleration** | 1.2 m/s² | 1.396 rad/s² |\n\nAfter making these changes, the program will execute the second waypoint (`Intermittent`) instead of the first (`Point_1`).",
+        "response_time_ms": 5930.085182189941,
+        "token_estimate": null
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:50:03.288877+02:00",
+      "type": "final_output",
+      "data": {
+        "response_text": "## Answer\n\nTo switch the waypoints in your UR robot program, you need to modify the `waypoint` parameter within the `ur-move-to` node configuration. Based on the provided context, here is how the waypoint switching is structured and what you need to change.\n\n### Current Program Structure\nThe program consists of two `ur-move-to` nodes:\n\n1.  **Waypoint 1 (Point_1)**:\n    *   **Type**: Move Linear (moveL)\n    *   **Current Waypoint**: `Point_1`\n    *   **Pose**: Defined in the `waypoint` parameter (Frame: base, Tool_flange).\n    *   **Advanced Settings**: Speed 0.25 m/s, Acceleration 1.2 m/s².\n\n2.  **Waypoint 2 (Intermittent)**:\n    *   **Type**: Move Joint (moveJ)\n    *   **Current Waypoint**: `Intermittent`\n    *   **Pose**: Defined in the `waypoint` parameter (Frame: base, Tool_flange).\n    *   **Advanced Settings**: Speed 1.047 rad/s, Acceleration 1.396 rad/s².\n\n### How to Switch Waypoints\nTo switch from the first waypoint to the second, you must update the `waypoint` value in the `contributedNode` parameters of the `ur-move-to` node.\n\n#### Step 1: Update the Waypoint Name\nChange the `waypoint` parameter from `Point_1` to `Intermittent`.\n\n**Example Configuration Change:**\n```json\n\"waypoint\": {\n  \"frame\": \"base\",\n  \"tcp\": {\n    \"name\": \"Tool_flange\",\n    \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n  },\n  \"qNear\": { ... },\n  \"pose\": { ... },\n  \"rx\": { ... },\n  \"ry\": { ... },\n  \"rz\": { ... }\n}\n```\n*Replace `\"Point_1\"` with `\"Intermittent\"`.*\n\n#### Step 2: Update Advanced Settings (Optional but Recommended)\nSince the second waypoint uses a different motion type (`moveJ` vs `moveL`), the advanced settings (speed and acceleration) might need adjustment to match the new motion profile.\n\n**Example Configuration Change for `moveJ`:**\n```json\n\"advanced\": {\n  \"speed\": {\n    \"speed\": {\n      \"entity\": {\n        \"value\": 1.04719755,\n        \"unit\": \"rad/s\"\n      },\n      \"selectedType\": \"VALUE\",\n      \"value\": 1.04719755\n    },\n    \"acceleration\": {\n      \"entity\": {\n        \"value\": 1.3962633999999998,\n        \"unit\": \"rad/s^2\"\n      },\n      \"selectedType\": \"VALUE\",\n      \"value\": 1.3962633999999998\n    },\n    \"motionValue\": \"OptiMove\",\n    \"optiMoveSpeed\": 30,\n    \"optiMoveAcceleration\": 9\n  },\n  \"blend\": {\n    \"enabled\": false\n  },\n  \"transform\": {\n    \"transform\": false\n  }\n}\n```\n*Note: If the robot requires different joint speeds or accelerations for the second waypoint, you should update the `speed` and `acceleration` values within the `advanced` section.*\n\n### Summary of Changes\n| Parameter | Current Value | New Value |\n| :--- | :--- | :--- |\n| **Waypoint Name** | `Point_1` | `Intermittent` |\n| **Motion Type** | `moveL` (Linear) | `moveJ` (Joint) |\n| **Speed** | 0.25 m/s | 1.047 rad/s |\n| **Acceleration** | 1.2 m/s² | 1.396 rad/s² |\n\nAfter making these changes, the program will execute the second waypoint (`Intermittent`) instead of the first (`Point_1`).",
+        "source_count": 10,
+        "sources_by_collection": {
+          "robot_programs": 10
+        },
+        "total_time_ms": 34507.29155540466,
+        "session_id": "b19e811f-0721-4003-be38-0e1392b04c37"
+      }
+    }
+  ]
+}

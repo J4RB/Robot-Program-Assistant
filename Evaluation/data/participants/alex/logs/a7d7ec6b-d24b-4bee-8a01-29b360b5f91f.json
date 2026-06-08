@@ -1,0 +1,269 @@
+{
+  "session_id": "a7d7ec6b-d24b-4bee-8a01-29b360b5f91f",
+  "start_time": "2026-05-14T11:43:27.243518+02:00",
+  "end_time": "2026-05-14T11:43:49.074967+02:00",
+  "event_count": 7,
+  "events": [
+    {
+      "timestamp": "2026-05-14T11:43:27.244177+02:00",
+      "type": "user_input",
+      "data": {
+        "query": "How to change from joint to linear move?",
+        "settings": {
+          "program_context": true,
+          "max_program_results": null,
+          "max_documentation_results": null,
+          "use_conversation_history": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-05-14T11:43:30.093049+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "change speed joint move 50%",
+        "limit": 5,
+        "step": 1
+      }
+    },
+    {
+      "timestamp": "2026-05-14T11:43:34.239778+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "change speed joint move 50%",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4146.500825881958,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-14T11:43:34.241662+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_code",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.7020328347579204,
+          "max": 0.7137221730203467,
+          "mean": 0.7074710950394595
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | 30 % | 9 %; moveType: moveJ; variable: Point; Previous actions: moveL.",
+            "score": 0.7137221730203467,
+            "source": "robot_program_code",
+            "program_id": "program5",
+            "program_name": "Program5",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 10,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[10]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[10]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": 0.7232170701026917,\n        \"shoulder\": -0.8188284796527405,\n        \"elbow\": 1.4854682127581995,\n        \"wrist1\": -3.217529436151022,\n        \"wrist2\": -1.5687263647662562,\n        \"wrist3\": 1.720012903213501\n      },\n      \"pose\": {\n        \"x\": -0.462801681001499,\n        \"y\": -0.5882738975548102,\n        \"z\": 0.2570406376713706,\n        \"rx\": 2.3630751877016807,\n        \"ry\": 0.7096016115128808,\n        \"rz\": -1.193001092159523\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1242,
+            "end_line": 1353,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program5#10",
+              "program_id": "program5",
+              "program_name": "Program5",
+              "chunk_text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | 30 % | 9 %; moveType: moveJ; variable: Point; Previous actions: moveL.",
+              "chunk_index": 10,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[10]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[10]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": 0.7232170701026917,\n        \"shoulder\": -0.8188284796527405,\n        \"elbow\": 1.4854682127581995,\n        \"wrist1\": -3.217529436151022,\n        \"wrist2\": -1.5687263647662562,\n        \"wrist3\": 1.720012903213501\n      },\n      \"pose\": {\n        \"x\": -0.462801681001499,\n        \"y\": -0.5882738975548102,\n        \"z\": 0.2570406376713706,\n        \"rx\": 2.3630751877016807,\n        \"ry\": 0.7096016115128808,\n        \"rz\": -1.193001092159523\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1242,
+              "end_line": 1353
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: moveJ.",
+            "score": 0.7088284849399776,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 0,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[0]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.6122081915484827,\n        \"shoulder\": -2.162340303460592,\n        \"elbow\": 2.1631205717669886,\n        \"wrist1\": -2.492721220056051,\n        \"wrist2\": -2.033844296132223,\n        \"wrist3\": 1.872475504875183\n      },\n      \"pose\": {\n        \"x\": -0.28578544571908027,\n        \"y\": 0.09175824606152996,\n        \"z\": 0.53988094762566,\n        \"rx\": 2.832463775200785,\n        \"ry\": -1.8202090587229356,\n        \"rz\": -1.519668430685042\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 69,
+            "end_line": 181,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#0",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: moveJ.",
+              "chunk_index": 0,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[0]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.6122081915484827,\n        \"shoulder\": -2.162340303460592,\n        \"elbow\": 2.1631205717669886,\n        \"wrist1\": -2.492721220056051,\n        \"wrist2\": -2.033844296132223,\n        \"wrist3\": 1.872475504875183\n      },\n      \"pose\": {\n        \"x\": -0.28578544571908027,\n        \"y\": 0.09175824606152996,\n        \"z\": 0.53988094762566,\n        \"rx\": 2.832463775200785,\n        \"ry\": -1.8202090587229356,\n        \"rz\": -1.519668430685042\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 69,
+              "end_line": 181
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.",
+            "score": 0.7077463523512281,
+            "source": "robot_program_code",
+            "program_id": "program5",
+            "program_name": "Program5",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 0,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[0]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 69,
+            "end_line": 181,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program5#0",
+              "program_id": "program5",
+              "program_name": "Program5",
+              "chunk_text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.",
+              "chunk_index": 0,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[0]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 69,
+              "end_line": 181
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program2 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: moveJ.",
+            "score": 0.7050256301278247,
+            "source": "robot_program_code",
+            "program_id": "program2",
+            "program_name": "Program2",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 0,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[0]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375503698932093,\n        \"shoulder\": -2.43825163463735,\n        \"elbow\": 2.1635831038104456,\n        \"wrist1\": -2.3498178921141566,\n        \"wrist2\": -1.8740103880511683,\n        \"wrist3\": -1.3140552679644983\n      },\n      \"pose\": {\n        \"x\": -0.21207388627528476,\n        \"y\": -0.015320965777250582,\n        \"z\": 0.58280858696566,\n        \"rx\": 1.709332536550383,\n        \"ry\": 3.68668439154959,\n        \"rz\": 0.8438624973342267\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 69,
+            "end_line": 181,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program2#0",
+              "program_id": "program2",
+              "program_name": "Program2",
+              "chunk_text": "Program Program2 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: moveJ.",
+              "chunk_index": 0,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[0]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375503698932093,\n        \"shoulder\": -2.43825163463735,\n        \"elbow\": 2.1635831038104456,\n        \"wrist1\": -2.3498178921141566,\n        \"wrist2\": -1.8740103880511683,\n        \"wrist3\": -1.3140552679644983\n      },\n      \"pose\": {\n        \"x\": -0.21207388627528476,\n        \"y\": -0.015320965777250582,\n        \"z\": 0.58280858696566,\n        \"rx\": 1.709332536550383,\n        \"ry\": 3.68668439154959,\n        \"rz\": 0.8438624973342267\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 69,
+              "end_line": 181
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.7020328347579204,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 11,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[11]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1401,
+            "end_line": 1512,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#11",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 11,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[11]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1401,
+              "end_line": 1512
+            }
+          }
+        ],
+        "step": 1,
+        "result_time_ms": 4148.344039916992
+      }
+    },
+    {
+      "timestamp": "2026-05-14T11:43:43.150006+02:00",
+      "type": "llm_synthesis_prompt",
+      "data": {
+        "system_prompt": "Synthesis LLM prompt",
+        "user_query": "How to change from joint to linear move?",
+        "context": "## Retrieved Information:\n\n**Source 1 (robot_program_code):**\nProgram Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | 30 % | 9 %; moveType: moveJ; variable: Point; Previous actions: moveL.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[10]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": 0.7232170701026917,\n        \"shoulder\": -0.8188284796527405,\n        \"elbow\": 1.4854682127581995,\n        \"wrist1\": -3.217529436151022,\n        \"wrist2\": -1.5687263647662562,\n        \"wrist3\": 1.720012903213501\n      },\n      \"pose\": {\n        \"x\": -0.462801681001499,\n        \"y\": -0.5882738975548102,\n        \"z\": 0.2570406376713706,\n        \"rx\": 2.3630751877016807,\n        \"ry\": 0.7096016115128808,\n        \"rz\": -1.193001092159523\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 2 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.6122081915484827,\n        \"shoulder\": -2.162340303460592,\n        \"elbow\": 2.1631205717669886,\n        \"wrist1\": -2.492721220056051,\n        \"wrist2\": -2.033844296132223,\n        \"wrist3\": 1.872475504875183\n      },\n      \"pose\": {\n        \"x\": -0.28578544571908027,\n        \"y\": 0.09175824606152996,\n        \"z\": 0.53988094762566,\n        \"rx\": 2.832463775200785,\n        \"ry\": -1.8202090587229356,\n        \"rz\": -1.519668430685042\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 3 (robot_program_code):**\nProgram Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 4 (robot_program_code):**\nProgram Program2 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375503698932093,\n        \"shoulder\": -2.43825163463735,\n        \"elbow\": 2.1635831038104456,\n        \"wrist1\": -2.3498178921141566,\n        \"wrist2\": -1.8740103880511683,\n        \"wrist3\": -1.3140552679644983\n      },\n      \"pose\": {\n        \"x\": -0.21207388627528476,\n        \"y\": -0.015320965777250582,\n        \"z\": 0.58280858696566,\n        \"rx\": 1.709332536550383,\n        \"ry\": 3.68668439154959,\n        \"rz\": 0.8438624973342267\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 5 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n## Provided Program Context:\n            {\n              \"children\": [],\n              \"contributedNode\": {\n                \"version\": \"0.0.4\",\n                \"type\": \"ur-move-to\",\n                \"allowsChildren\": false,\n                \"parameters\": {\n                  \"moveType\": \"moveJ\",\n                  \"variable\": {\n                    \"entity\": {\n                      \"name\": \"Point\",\n                      \"reference\": false,\n                      \"type\": \"$$Variable\",\n                      \"valueType\": \"waypoint\",\n                      \"declaredByID\": \"6db649ef-c46b-8ea0-2065-992a9feec072\"\n                    },\n                    \"selectedType\": \"VALUE\",\n                    \"value\": \"Point\"\n                  },\n                  \"waypoint\": {\n                    \"frame\": \"base\",\n                    \"tcp\": {\n                      \"name\": \"Tool_flange\",\n                      \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n                    },\n                    \"qNear\": {\n                      \"base\": -0.6122081915484827,\n                      \"shoulder\": -2.162340303460592,\n                      \"elbow\": 2.1631205717669886,\n                      \"wrist1\": -2.492721220056051,\n                      \"wrist2\": -2.033844296132223,\n                      \"wrist3\": 1.872475504875183\n                    },\n                    \"pose\": {\n                      \"x\": {\n                        \"entity\": {\n                          \"value\": -0.28578544571908027,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -0.28578544571908027\n                      },\n                      \"y\": {\n                        \"entity\": {\n                          \"value\": 0.09175824606152996,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 0.09175824606152996\n                      },\n                      \"z\": {\n                        \"entity\": {\n                          \"value\": 0.53988094762566,\n                          \"unit\": \"m\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 0.53988094762566\n                      },\n                      \"rx\": {\n                        \"entity\": {\n                          \"value\": 2.832463775200785,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 2.832463775200785\n                      },\n                      \"ry\": {\n                        \"entity\": {\n                          \"value\": -1.8202090587229356,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -1.8202090587229356\n                      },\n                      \"rz\": {\n                        \"entity\": {\n                          \"value\": -1.519668430685042,\n                          \"unit\": \"rad\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": -1.519668430685042\n                      }\n                    }\n                  },\n                  \"advanced\": {\n                    \"speed\": {\n                      \"speed\": {\n                        \"entity\": {\n                          \"value\": 1.04719755,\n                          \"unit\": \"rad/s\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 1.04719755\n                      },\n                      \"acceleration\": {\n                        \"entity\": {\n                          \"value\": 1.3962633999999998,\n                          \"unit\": \"rad/s^2\"\n                        },\n                        \"selectedType\": \"VALUE\",\n                        \"value\": 1.3962633999999998\n                      },\n                      \"motionValue\": \"OptiMove\",\n                      \"optiMoveSpeed\": 30,\n                      \"optiMoveAcceleration\": 9\n                    },\n                    \"blend\": {\n                      \"enabled\": false\n                    },\n                    \"transform\": {\n                      \"transform\": false\n                    }\n                  }\n                }\n              },\n              \"guid\": \"6db649ef-c46b-8ea0-2065-992a9feec072\",\n              \"parentId\": \"51014c7b-36fc-646d-81ad-3b1bba1003df\",\n              \"programLabel\": [\n                {\n                  \"type\": \"primary\",\n                  \"translationKey\": \"program-node-label.move-to.name.default\",\n                  \"interpolateParams\": {\n                    \"name\": \"Point\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.joint\"\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.single-value\",\n                  \"interpolateParams\": {\n                    \"value\": \"base\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.single-value\",\n                  \"interpolateParams\": {\n                    \"value\": \"Tool_flange\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.speed\",\n                  \"interpolateParams\": {\n                    \"speed\": \"30 %\"\n                  }\n                },\n                {\n                  \"type\": \"secondary\",\n                  \"translationKey\": \"program-node-label.move-to.acceleration\",\n                  \"interpolateParams\": {\n                    \"acceleration\": \"9 %\"\n                  }\n                }\n              ]\n            },",
+        "context_length": 13063,
+        "history": [
+          "User: Change the speed for the last Joint Move to 50%",
+          "Assistant: ## How to Change the Speed for the Last Joint Move to 50%",
+          "",
+          "To change the speed of the last Joint Move (identified as `Point_5`) to 50%, you need to modify the `advanced.speed` section within the node's parameters. Based on the provided context, here is the specific configuration required:",
+          "",
+          "### 1. Identify the Target Node",
+          "The last Joint Move node in the program tree is labeled **`Point_5 | base | Tool_flange | 30 % | 9 %`**.",
+          "",
+          "### 2. Modify the Parameters",
+          "You must edit the `advanced.speed` object "
+        ],
+        "history_length": 10
+      }
+    },
+    {
+      "timestamp": "2026-05-14T11:43:49.074469+02:00",
+      "type": "llm_response",
+      "data": {
+        "response_text": "## How to Change from Joint to Linear Move\n\nTo change a joint move from a joint-based trajectory to a linear (Cartesian) move in UR robot programming, you need to modify the `moveType` parameter within the node's parameters.\n\n### 1. Identify the Target Node\nFirst, locate the specific node in your program tree that you want to change. Based on the provided context, the node labeled **`Point_5 | base | Tool_flange | 30 % | 9 %`** is a joint move (`moveJ`).\n\n### 2. Modify the Parameters\nYou must edit the `advanced` section of the node's parameters. Specifically, change the `moveType` from `\"moveJ\"` to `\"moveL\"`.\n\n**Current Configuration (Joint Move):**\n```json\n\"moveType\": \"moveJ\"\n```\n\n**Target Configuration (Linear Move):**\n```json\n\"moveType\": \"moveL\"\n```\n\n### 3. Example Program Snippet\nHere is an example of how the node configuration would look after the change:\n\n```json\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\", // Changed from 'moveJ'\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"parameters\": {\n    \"moveType\": \"moveL\", // Changed from 'moveJ'\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.6122081915484827,\n        \"shoulder\": -2.162340303460592,\n        \"elbow\": 2.1631205717669886,\n        \"wrist1\": -2.492721220056051,\n        \"wrist2\": -2.033844296132223,\n        \"wrist3\": 1.872475504875183\n      },\n      \"pose\": {\n        \"x\": -0.28578544571908027,\n        \"y\": 0.09175824606152996,\n        \"z\": 0.53988094762566,\n        \"rx\": 2.832463775200785,\n        \"ry\": -1.8202090587229356,\n        \"rz\": -1.519668430685042\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n```\n\n### Important Note\nThe `moveL` action type typically requires a linear trajectory (waypoints) rather than a joint-space trajectory. If your program relies on joint-space waypoints (like the `qNear` values shown in the context), you may need to restructure the program to use linear waypoints or adjust the `waypoint` structure to match the `moveL` requirement.",
+        "response_time_ms": 5924.433946609497,
+        "token_estimate": null
+      }
+    },
+    {
+      "timestamp": "2026-05-14T11:43:49.074926+02:00",
+      "type": "final_output",
+      "data": {
+        "response_text": "## How to Change from Joint to Linear Move\n\nTo change a joint move from a joint-based trajectory to a linear (Cartesian) move in UR robot programming, you need to modify the `moveType` parameter within the node's parameters.\n\n### 1. Identify the Target Node\nFirst, locate the specific node in your program tree that you want to change. Based on the provided context, the node labeled **`Point_5 | base | Tool_flange | 30 % | 9 %`** is a joint move (`moveJ`).\n\n### 2. Modify the Parameters\nYou must edit the `advanced` section of the node's parameters. Specifically, change the `moveType` from `\"moveJ\"` to `\"moveL\"`.\n\n**Current Configuration (Joint Move):**\n```json\n\"moveType\": \"moveJ\"\n```\n\n**Target Configuration (Linear Move):**\n```json\n\"moveType\": \"moveL\"\n```\n\n### 3. Example Program Snippet\nHere is an example of how the node configuration would look after the change:\n\n```json\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\", // Changed from 'moveJ'\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"parameters\": {\n    \"moveType\": \"moveL\", // Changed from 'moveJ'\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.6122081915484827,\n        \"shoulder\": -2.162340303460592,\n        \"elbow\": 2.1631205717669886,\n        \"wrist1\": -2.492721220056051,\n        \"wrist2\": -2.033844296132223,\n        \"wrist3\": 1.872475504875183\n      },\n      \"pose\": {\n        \"x\": -0.28578544571908027,\n        \"y\": 0.09175824606152996,\n        \"z\": 0.53988094762566,\n        \"rx\": 2.832463775200785,\n        \"ry\": -1.8202090587229356,\n        \"rz\": -1.519668430685042\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n```\n\n### Important Note\nThe `moveL` action type typically requires a linear trajectory (waypoints) rather than a joint-space trajectory. If your program relies on joint-space waypoints (like the `qNear` values shown in the context), you may need to restructure the program to use linear waypoints or adjust the `waypoint` structure to match the `moveL` requirement.",
+        "source_count": 5,
+        "sources_by_collection": {
+          "robot_program_code": 5
+        },
+        "total_time_ms": 21831.427574157715,
+        "session_id": "a7d7ec6b-d24b-4bee-8a01-29b360b5f91f"
+      }
+    }
+  ]
+}

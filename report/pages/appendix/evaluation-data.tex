@@ -1,0 +1,35 @@
+\chapter{Evaluation Data} \label{appendix:evaluation-data}
+
+\newcommand{\CsvVerbatimInput}[1]{%
+    \VerbatimInput[
+        fontsize=\tiny,
+        breaklines=true,
+        breakafter={,},
+        % breaksymbolleft={},
+        breaksymbolright={},
+        breakaftersymbolpre={},
+        breakaftersymbolpost={}
+    ]{#1}%
+}
+
+This appendix provides the raw evaluation results used in Chapter \ref{chapter:evaluation}. The same result and log files are also available in the digital appendix (see Appendix \ref{appendix:digital-appendix-overview}).
+
+\section{Raw Survey Responses}
+\subsection{Combined Responses (\texttt{respons.csv})}
+\CsvVerbatimInput{../Evaluation/data/respons.csv}
+
+\subsection{Correctness Labels (\texttt{respons-correctness.csv})}
+\CsvVerbatimInput{../Evaluation/data/respons-correctness.csv}
+
+\subsection{Completion Times (\texttt{respons-time.csv})}
+\CsvVerbatimInput{../Evaluation/data/respons-time.csv}
+
+\subsection{AI Assistant Usage (\texttt{respons-ai\_use.csv})}
+\CsvVerbatimInput{../Evaluation/data/respons-ai_use.csv}
+
+\section{Extracted Log Data}
+\subsection{Assistant Sessions (\texttt{assistant\_logs\_raw\_sessions.csv})}
+\CsvVerbatimInput{../Evaluation/data/assistant_logs_raw_sessions.csv}
+
+\subsection{Assistant Sessions (Embeddings) (\texttt{assistant\_logs\_raw\_embeddings.csv})}
+\CsvVerbatimInput{../Evaluation/data/assistant_logs_raw_embeddings.csv}

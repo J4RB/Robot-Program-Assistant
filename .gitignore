@@ -1,0 +1,49 @@
+### Python ###
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+
+### Environment ###
+.venv/
+.env
+.env.local
+.env.*.local
+
+### IDE & Editor ###
+.vscode/
+
+### LaTeX ###
+report/build/
+report/*.fdb_latexmk
+report/*.fls
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.synctex.gz
+report/*.pdf
+report/indent.log
+report/*-charcount.sum
+
+### Generated Data & Databases ###
+database/
+*.npz
+
+### App Frontend ###
+app/frontend/node_modules/
+app/frontend/build/
+app/frontend/dist/
+app/frontend/.env
+app/frontend/.env.local
+app/frontend/.env.development.local
+app/frontend/.env.test.local
+app/frontend/.env.production.local
+app/frontend/npm-debug.log*
+app/frontend/yarn-debug.log*
+app/frontend/yarn-error.log*

@@ -1,0 +1,9 @@
+\begin{abstract}
+    Robotic programming remains a specialized and time-consuming activity, which limits reuse and rapid adaptation of existing robot solutions. This thesis investigates how large language models (LLMs) can support natural language-based comprehension and reprogrammability of robotic programs.
+
+    The thesis contributes an architectural design exploration, and an implemented prototype that combines an agentic retrieval-augmented generation workflow with indexed robot-program and documentation corpora. The system includes an offline data pipeline for transformation, chunking, embedding, and ingestion; a FastAPI backend with retrieval tools and orchestration; and a frontend for program search and assistant-supported editing.
+
+    The approach was evaluated through a controlled within-subject user study comparing a baseline workflow (UR Studio) with the proposed system. Results show that comprehension correctness remained near-perfect in both conditions, indicating that retrieval-supported assistant interaction can effectively support program understanding. However, the proposed system increased task completion time and reduced user confidence for comprehension tasks, with much of the time penalty linked to assistant latency and interaction overhead. For modification and reuse tasks, the proposed system underperformed the baseline in both correctness and completion time, particularly for structurally complex modifications.
+
+    The findings indicate that LLM-based assistance is already promising for robotic program comprehension, but robust support for reprogrammability requires stronger grounding, improved retrieval quality and domain coverage, and a better-aligned editing abstraction than direct low-level program editing.
+\end{abstract}

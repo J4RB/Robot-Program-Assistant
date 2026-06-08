@@ -1,0 +1,669 @@
+{
+  "session_id": "6714e291-c750-4726-8537-adf4a67249fc",
+  "start_time": "2026-05-15T14:08:09.645812+02:00",
+  "end_time": "2026-05-15T14:08:35.795111+02:00",
+  "event_count": 10,
+  "events": [
+    {
+      "timestamp": "2026-05-15T14:08:09.646461+02:00",
+      "type": "user_input",
+      "data": {
+        "query": "Does the program use urcap?",
+        "settings": {
+          "program_context": false,
+          "max_program_results": null,
+          "max_documentation_results": null,
+          "use_conversation_history": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:12.224031+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_programs",
+        "query": "urcap",
+        "limit": 5,
+        "step": 1
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:16.347920+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_programs",
+        "query": "urcap",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4123.678684234619,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:16.348859+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_programs",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.5123067540566223,
+          "max": 0.5515294824533196,
+          "mean": 0.5340032805650934
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+            "score": 0.5515294824533196,
+            "source": "robot_programs",
+            "program_id": "Program2",
+            "program_name": "Program2",
+            "robot_type": "UR5",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program2",
+              "program_id": "Program2",
+              "program_name": "Program2",
+              "chunk_text": "Program: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 2,
+                "name": "Program2",
+                "robotType": "UR5",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "2FG7"
+                ],
+                "image": "Program2.png",
+                "dataAvailable": "Robot Operational Data | Event Data",
+                "components": "UR5 | Gripper 2FG7",
+                "program": "Task1_B",
+                "additionalImage": "Program2_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Cube"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR5",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.",
+            "score": 0.5445552098788246,
+            "source": "robot_programs",
+            "program_id": "Program5",
+            "program_name": "Program5",
+            "robot_type": "UR5",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program5",
+              "program_id": "Program5",
+              "program_name": "Program5",
+              "chunk_text": "Program: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 5,
+                "name": "Program5",
+                "robotType": "UR5",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15"
+                ],
+                "image": "Program5.png",
+                "dataAvailable": "Robot Operational Data | Camera Data",
+                "components": "UR5 | Gripper 3FG15 | Camera",
+                "program": "Task2_A",
+                "additionalImage": "Program5_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Sphere"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR5",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.",
+            "score": 0.5375066274789175,
+            "source": "robot_programs",
+            "program_id": "Program4",
+            "program_name": "Program4",
+            "robot_type": "UR20",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program4",
+              "program_id": "Program4",
+              "program_name": "Program4",
+              "chunk_text": "Program: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 4,
+                "name": "Program4",
+                "robotType": "UR20",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "2FG7"
+                ],
+                "image": "Program4.png",
+                "dataAvailable": "Robot Operational Data",
+                "components": "UR5 | Gripper 2FG7",
+                "program": "Task1_D",
+                "additionalImage": "Program4_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Block"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR20",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+            "score": 0.5241183289577829,
+            "source": "robot_programs",
+            "program_id": "Program7",
+            "program_name": "Program7",
+            "robot_type": "UR3",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program7",
+              "program_id": "Program7",
+              "program_name": "Program7",
+              "chunk_text": "Program: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 7,
+                "name": "Program7",
+                "robotType": "UR3",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15",
+                  "2FG7"
+                ],
+                "image": "Program7.png",
+                "dataAvailable": "Robot Operational Data | Event Data",
+                "components": "UR5 | Gripper 3FG15 | Gripper 2FG7",
+                "program": "Task2_C",
+                "additionalImage": "Program7_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Cylinder",
+                  "Cube"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR3",
+              "application_type": "Pick and Place"
+            }
+          },
+          {
+            "id": null,
+            "text": "Program: Program8. Robot type: UR10. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube, Prism. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+            "score": 0.5123067540566223,
+            "source": "robot_programs",
+            "program_id": "Program8",
+            "program_name": "Program8",
+            "robot_type": "UR10",
+            "application_type": "Pick and Place",
+            "chunk_index": 0,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "Program8",
+              "program_id": "Program8",
+              "program_name": "Program8",
+              "chunk_text": "Program: Program8. Robot type: UR10. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube, Prism. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.",
+              "chunk_index": 0,
+              "metadata": {
+                "id": 8,
+                "name": "Program8",
+                "robotType": "UR10",
+                "applicationType": "Pick and Place",
+                "gripperType": [
+                  "3FG15",
+                  "2FG7"
+                ],
+                "image": "Program8.png",
+                "dataAvailable": "Robot Operational Data | Event Data",
+                "components": "UR5 | Gripper 3FG15 | Gripper 2FG7",
+                "program": "Task3",
+                "additionalImage": "Program8_detail.png",
+                "totalRating": 0,
+                "ratingCount": 0,
+                "objectType": [
+                  "Cylinder",
+                  "Cube",
+                  "Prism"
+                ],
+                "objectWeight": 0,
+                "cncDoorControl": false,
+                "communicationType": "None",
+                "actions": [
+                  "moveJ",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveL",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ",
+                  "release",
+                  "moveL",
+                  "grip",
+                  "moveL",
+                  "moveJ",
+                  "moveJ",
+                  "moveJ",
+                  "moveL",
+                  "release",
+                  "moveL",
+                  "moveJ"
+                ]
+              },
+              "robot_type": "UR10",
+              "application_type": "Pick and Place"
+            }
+          }
+        ],
+        "step": 1,
+        "result_time_ms": 4124.577760696411
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:22.008431+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "urcap",
+        "limit": 5,
+        "step": 2
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:26.097407+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "urcap",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4088.782787322998,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:26.099454+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_code",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.6198542238559213,
+          "max": 0.6338542939331672,
+          "mean": 0.6277483091532459
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program Program8 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 81 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 81; action: grip; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.6338542939331672,
+            "source": "robot_program_code",
+            "program_id": "program8",
+            "program_name": "Program8",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 21,
+            "chunk_type": "robot_action",
+            "section_name": "grip",
+            "snippet_path": "program.programContent.children[5].children[21]",
+            "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 81 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[21]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 81,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+            "start_line": 2559,
+            "end_line": 2582,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program8#21",
+              "program_id": "program8",
+              "program_name": "Program8",
+              "chunk_text": "Program Program8 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 81 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 81; action: grip; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 21,
+              "chunk_type": "robot_action",
+              "section_name": "grip",
+              "snippet_path": "program.programContent.children[5].children[21]",
+              "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 81 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[21]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 81,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+              "start_line": 2559,
+              "end_line": 2582
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 110 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 110; action: grip; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.6322242545213729,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 10,
+            "chunk_type": "robot_action",
+            "section_name": "grip",
+            "snippet_path": "program.programContent.children[5].children[10]",
+            "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 110 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[10]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 110,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+            "start_line": 1257,
+            "end_line": 1280,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#10",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 110 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 110; action: grip; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 10,
+              "chunk_type": "robot_action",
+              "section_name": "grip",
+              "snippet_path": "program.programContent.children[5].children[10]",
+              "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 110 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[10]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 110,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+              "start_line": 1257,
+              "end_line": 1280
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program2 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.6267403003859494,
+            "source": "robot_program_code",
+            "program_id": "program2",
+            "program_name": "Program2",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 4,
+            "chunk_type": "robot_action",
+            "section_name": "grip",
+            "snippet_path": "program.programContent.children[5].children[4]",
+            "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[4]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 50,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+            "start_line": 576,
+            "end_line": 599,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program2#4",
+              "program_id": "program2",
+              "program_name": "Program2",
+              "chunk_text": "Program Program2 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 4,
+              "chunk_type": "robot_action",
+              "section_name": "grip",
+              "snippet_path": "program.programContent.children[5].children[4]",
+              "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[4]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 50,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+              "start_line": 576,
+              "end_line": 599
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program4 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.6260684730698189,
+            "source": "robot_program_code",
+            "program_id": "program4",
+            "program_name": "Program4",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 4,
+            "chunk_type": "robot_action",
+            "section_name": "grip",
+            "snippet_path": "program.programContent.children[5].children[4]",
+            "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[4]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+            "start_line": 576,
+            "end_line": 599,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program4#4",
+              "program_id": "program4",
+              "program_name": "Program4",
+              "chunk_text": "Program Program4 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 4,
+              "chunk_type": "robot_action",
+              "section_name": "grip",
+              "snippet_path": "program.programContent.children[5].children[4]",
+              "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[4]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+              "start_line": 576,
+              "end_line": 599
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program6 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.6198542238559213,
+            "source": "robot_program_code",
+            "program_id": "program6",
+            "program_name": "Program6",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 7,
+            "chunk_type": "robot_action",
+            "section_name": "grip",
+            "snippet_path": "program.programContent.children[5].children[7]",
+            "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[7]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 50,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+            "start_line": 924,
+            "end_line": 947,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program6#7",
+              "program_id": "program6",
+              "program_name": "Program6",
+              "chunk_text": "Program Program6 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 7,
+              "chunk_type": "robot_action",
+              "section_name": "grip",
+              "snippet_path": "program.programContent.children[5].children[7]",
+              "snippet_text": "{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[7]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 50,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+              "start_line": 924,
+              "end_line": 947
+            }
+          }
+        ],
+        "step": 2,
+        "result_time_ms": 4090.794086456299
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:32.844143+02:00",
+      "type": "llm_synthesis_prompt",
+      "data": {
+        "system_prompt": "Synthesis LLM prompt",
+        "user_query": "Does the program use urcap?",
+        "context": "## Retrieved Information:\n\n**Source 1 (robot_programs):**\nProgram: Program2. Robot type: UR5. Application: Pick and Place. Gripper: 2FG7. Object type: Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.\n\n**Source 2 (robot_programs):**\nProgram: Program5. Robot type: UR5. Application: Pick and Place. Gripper: 3FG15. Object type: Sphere. Actions: moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Camera. Data available: Robot Operational Data | Camera Data.\n\n**Source 3 (robot_programs):**\nProgram: Program4. Robot type: UR20. Application: Pick and Place. Gripper: 2FG7. Object type: Block. Actions: moveJ, moveL, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ. Components: UR5 | Gripper 2FG7. Data available: Robot Operational Data.\n\n**Source 4 (robot_programs):**\nProgram: Program7. Robot type: UR3. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, moveL, release, moveL, moveL, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.\n\n**Source 5 (robot_programs):**\nProgram: Program8. Robot type: UR10. Application: Pick and Place. Gripper: 3FG15, 2FG7. Object type: Cylinder, Cube, Prism. Actions: moveJ, moveJ, release, moveL, grip, moveL, moveL, moveL, release, moveL, moveJ, moveL, grip, moveL, moveJ, moveL, release, moveL, moveJ, release, moveL, grip, moveL, moveJ, moveJ, moveJ, moveL, release, moveL, moveJ. Components: UR5 | Gripper 3FG15 | Gripper 2FG7. Data available: Robot Operational Data | Event Data.\n\n**Source 6 (robot_program_code):**\nProgram Program8 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 81 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 81; action: grip; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 81 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[21]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 81,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}\n\n**Source 7 (robot_program_code):**\nProgram Program7 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 110 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 110; action: grip; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 110 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[10]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 110,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}\n\n**Source 8 (robot_program_code):**\nProgram Program2 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[4]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 50,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}\n\n**Source 9 (robot_program_code):**\nProgram Program4 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 40 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 40 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[4]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 40,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}\n\n**Source 10 (robot_program_code):**\nProgram Program6 action snippet. Action: grip; Node type: onrobot-urcap-program; Label: 2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external; speed: 100; tool: 2FG7; force: 40; action: grip; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"onrobot-urcap-program\",\n  \"action_name\": \"grip\",\n  \"label\": \"2FG7 (1) - grip | width: 50 mm | force: 40 N | speed: 100 mm/s | weight: 1 kg | type: external\",\n  \"path\": \"program.programContent.children[5].children[7]\",\n  \"parameters\": {\n    \"tool\": {\n      \"id\": 192,\n      \"name\": \"2FG7\",\n      \"slot\": 1,\n      \"firmwareVersion\": \"1.0.25#68B67273\",\n      \"serialNumber\": \"1000033630\",\n      \"displayName\": \"2FG7 (1)\"\n    },\n    \"action\": \"grip\",\n    \"width\": 50,\n    \"speed\": 100,\n    \"type\": \"external\",\n    \"depthCompensation\": false,\n    \"weight\": 1,\n    \"force\": 40,\n    \"stopRobotOnGripLost\": false,\n    \"flexibleGrip\": false,\n    \"stopIfWorkpieceNotGripper\": false\n  }\n}",
+        "context_length": 6913,
+        "history": [
+          "User: Which gripper does the program use?",
+          "Assistant: Based on the provided program context, the program uses a **3FG15 (2)** gripper.",
+          "",
+          "Here are the specific details regarding the gripper configuration:",
+          "",
+          "*   **Gripper Name:** 3FG15 (2)",
+          "*   **Gripper Type:** External",
+          "*   **Diameter:** 40 mm",
+          "*   **Force:** 80% (80 N)",
+          "*   **Weight:** 1 kg",
+          "*   **Speed:** 100 (likely mm/s or similar unit)",
+          "*   **Flexibility:** Flexible grip enabled",
+          "*   **Tool Slot:** Slot 2",
+          "",
+          "The program also includes a release action for this same gripper, which is configured with a widt"
+        ],
+        "history_length": 15
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:35.795055+02:00",
+      "type": "llm_response",
+      "data": {
+        "response_text": "## No, the program does not use UR-CAPE.\n\nBased on the provided program context, the robot programming uses the **UR-CAPE** framework, but it does not use the **UR-CAPE** robot programming interface itself.\n\n### Program Structure and Components\n\nThe programs are structured as follows:\n\n*   **Program Type**: The programs are identified as `onrobot-urcap-program` nodes.\n*   **Robot Type**: The robots involved are UR5, UR20, UR3, and UR10.\n*   **Gripper Configuration**: The programs utilize specific grippers:\n    *   **2FG7**: Used in Program 2, 3, 4, 5, and 8.\n    *   **3FG15**: Used in Program 2, 4, 5, and 7.\n*   **Actions**: The actions performed include `moveJ`, `moveL`, `release`, `grip`, and `moveJ`.\n\n### Technical Details\n\nThe provided code snippets show the actual logic and parameters used within the program:\n\n*   **Grip Action**: The `grip` action is executed with specific parameters such as:\n    *   **Tool ID**: 192 (corresponding to the 2FG7 or 3FG15 gripper).\n    *   **Force**: Varies between 40 N and 81 N depending on the specific program instance.\n    *   **Speed**: Set to 100 mm/s.\n    *   **Type**: External.\n    *   **Flexibility**: `flexibleGrip` is set to `false`.\n\n### Conclusion\n\nThe program uses the **UR-CAPE** framework (indicated by the node type `onrobot-urcap-program` and the presence of gripper data in the configuration), but the actual execution relies on the **UR-CAPE** robot programming interface to control the grippers (2FG7 and 3FG15) and perform the pick-and-place actions. The UR-CAPE framework is the underlying system, while the specific robot programming logic is implemented via the UR-CAPE interface.",
+        "response_time_ms": 2950.8864879608154,
+        "token_estimate": null
+      }
+    },
+    {
+      "timestamp": "2026-05-15T14:08:35.795107+02:00",
+      "type": "final_output",
+      "data": {
+        "response_text": "## No, the program does not use UR-CAPE.\n\nBased on the provided program context, the robot programming uses the **UR-CAPE** framework, but it does not use the **UR-CAPE** robot programming interface itself.\n\n### Program Structure and Components\n\nThe programs are structured as follows:\n\n*   **Program Type**: The programs are identified as `onrobot-urcap-program` nodes.\n*   **Robot Type**: The robots involved are UR5, UR20, UR3, and UR10.\n*   **Gripper Configuration**: The programs utilize specific grippers:\n    *   **2FG7**: Used in Program 2, 3, 4, 5, and 8.\n    *   **3FG15**: Used in Program 2, 4, 5, and 7.\n*   **Actions**: The actions performed include `moveJ`, `moveL`, `release`, `grip`, and `moveJ`.\n\n### Technical Details\n\nThe provided code snippets show the actual logic and parameters used within the program:\n\n*   **Grip Action**: The `grip` action is executed with specific parameters such as:\n    *   **Tool ID**: 192 (corresponding to the 2FG7 or 3FG15 gripper).\n    *   **Force**: Varies between 40 N and 81 N depending on the specific program instance.\n    *   **Speed**: Set to 100 mm/s.\n    *   **Type**: External.\n    *   **Flexibility**: `flexibleGrip` is set to `false`.\n\n### Conclusion\n\nThe program uses the **UR-CAPE** framework (indicated by the node type `onrobot-urcap-program` and the presence of gripper data in the configuration), but the actual execution relies on the **UR-CAPE** robot programming interface to control the grippers (2FG7 and 3FG15) and perform the pick-and-place actions. The UR-CAPE framework is the underlying system, while the specific robot programming logic is implemented via the UR-CAPE interface.",
+        "source_count": 10,
+        "sources_by_collection": {
+          "robot_programs": 5,
+          "robot_program_code": 5
+        },
+        "total_time_ms": 26149.31631088257,
+        "session_id": "6714e291-c750-4726-8537-adf4a67249fc"
+      }
+    }
+  ]
+}

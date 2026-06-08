@@ -1,0 +1,6 @@
+Tidsstempel,Enter your name:,B: Identify the key actions used in the robotic program. ,B:  Choose the correct sequence of actions in the order performed by the robot in the program. ,B:  Choose the correct sequence of waypoints in the order they are reached by the robot in the program. ,B: Does the program use any URCap?,B: Which gripper does the program use?,B: Which of the following overall applications best match the program.,B: Modification 1.,B: Modification 2.,B: Modification 3.,B: Modification 4.,B: Modification 5.
+11/05/2026 18.07.29,Andreas Petersen,0,0,1,0,0,1,0,1,0,0,1
+14/05/2026 11.07.36,Max Hansen,1,0,1,0,0,0,0,0,0,0,1
+14/05/2026 12.36.58,Alex Valentiner,0,0,0,0,0,0,1,1,1,1,1
+15/05/2026 15.04.09,Frederik Thrane,0,1,1,1,1,1,1,1,1,1,1
+18/05/2026 22.16.04,Nikolaj Fredensborg,0,0,0,1,0,0,0,0,1,1,1

@@ -1,0 +1,35 @@
+{
+    "id": 2,
+    "name": "Program2",
+    "robotType": "UR5",
+    "applicationType": "Pick and Place",
+    "gripperType": [
+        "2FG7"
+    ],
+    "image": "Program2.png",
+    "dataAvailable": "Robot Operational Data | Event Data",
+    "components": "UR5 | Gripper 2FG7",
+    "program": "Task1_B",
+    "additionalImage": "Program2_detail.png",
+    "totalRating": 0,
+    "ratingCount": 0,
+    "objectType": [
+        "Cube"
+    ],
+    "objectWeight": 0,
+    "cncDoorControl": false,
+    "communicationType": "None",
+    "actions": [
+        "moveJ",
+        "moveJ",
+        "release",
+        "moveL",
+        "grip",
+        "moveL",
+        "moveJ",
+        "moveL",
+        "release",
+        "moveL",
+        "moveJ"
+    ]
+}

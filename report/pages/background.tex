@@ -1,0 +1,62 @@
+\chapter{Background} \label{sec:background}
+This chapter introduces the background information needed to understand the robot programming concepts mentioned in this thesis.
+
+% \section{Terminology}
+% \subsection{Large Language Models}
+% Large Language Models (LLMs) are a class of machine learning models designed to process, generate, and reason over natural language. They are typically based on deep neural network architectures, most commonly the transformer architecture, and are trained on large-scale text corpora using self-supervised learning objectives. By learning statistical patterns in language, LLMs can perform a wide range of tasks, including text generation, summarization, translation, question answering, and code synthesis.
+
+% At a high level, LLMs operate by modeling the probability distribution of sequences of tokens. Given a sequence of input tokens, the model predicts the probability of the next token in the sequence. During training, the model is optimized to maximize the likelihood of correct next-token predictions across large datasets. This objective enables the model to capture syntactic structure, semantic relationships, and contextual dependencies within language.
+
+% The core architectural component enabling this behavior is the transformer, which relies on mechanisms such as self-attention to weigh the relevance of different tokens in a sequence. Self-attention allows the model to dynamically focus on different parts of the input when generating each token, enabling it to capture long-range dependencies more effectively than earlier sequence models.
+
+% Content generation in LLMs is performed in an autoregressive manner. Starting from an initial input (prompt), the model repeatedly predicts the next token based on the previously generated tokens and the input context. At each step, the model produces a probability distribution over its vocabulary, and a token is selected according to a decoding strategy. This iterative process continues until a stopping condition is met, such as reaching a maximum length or generating a special end-of-sequence token.
+
+% Because LLMs are statistical models, their outputs are inherently non-deterministic under most decoding strategies. When sampling-based methods are used, the same prompt can produce different outputs across multiple runs, as token selection is influenced by probabilistic choices. Even when deterministic decoding strategies are applied, minor changes in input or configuration can lead to different outputs due to the sensitivity of the underlying probability distributions.
+
+% LLMs are categorized based on their functionality or optimization objective:
+% \begin{itemize}
+%     \item \textbf{Text Models:} These models are optimized for natural language understanding and generation tasks. They are commonly used for conversation, summarization, and content generation.
+%     \item \textbf{Embedding Models:} These models map text into high-dimensional vector representations. The resulting embeddings capture semantic similarity and are used in tasks such as information retrieval, clustering, and recommendation systems.
+%     \item \textbf{Code Models:} These models are trained on source code and natural language descriptions to support tasks such as code generation, completion, refactoring, and documentation.
+% \end{itemize}
+
+% Despite differences in specialization, these models share common underlying mechanisms and concepts, which are described in the following subsections.
+
+% \paragraph{Tokens}~\\
+% Tokens are the fundamental units of text processed by language models. Instead of operating directly on raw characters or words, LLMs segment input text into tokens, which may correspond to words, subwords, or individual characters depending on the tokenization scheme. For example, a word may be split into multiple subword tokens to efficiently represent rare or complex vocabulary.
+
+% Tokenization enables models to operate over a fixed vocabulary while maintaining flexibility in representing diverse linguistic inputs. The number of tokens in an input directly affects computational cost and model constraints, as most models impose limits on how many tokens can be processed simultaneously.
+
+% \paragraph{Context Window}~\\
+% The context window refers to the maximum number of tokens a model can consider in a single input sequence. This includes both the prompt (input) and the generated output. The size of the context window is a critical factor in determining how much information the model can use when generating responses.
+
+% A larger context window allows the model to incorporate more prior information, enabling better handling of long documents, multi-turn conversations, and complex reasoning tasks. However, increasing the context window also raises computational and memory requirements. Consequently, practical systems must balance context length with efficiency.
+
+% \paragraph{Prompts}~\\
+% Prompts are structured inputs provided to a language model to guide its behavior and outputs. A prompt may consist of instructions, examples, or contextual information that influence how the model interprets and responds to a task.
+
+% Prompt design, often referred to as prompt engineering, plays a significant role in eliciting desired behavior from LLMs. Techniques such as zero-shot prompting (no examples), few-shot prompting (providing examples), and instruction-based prompting are commonly used to improve performance on specific tasks without retraining the model.
+
+% Prompts can also define system-level constraints, such as tone, format, or domain-specific requirements, making them a flexible interface for controlling model outputs.
+
+% \paragraph{Fine-tuning}~\\
+% Fine-tuning is the process of adapting a pre-trained language model to a specific task or domain by continuing training on a smaller, task-specific dataset. While base models learn general language patterns from large corpora, fine-tuning refines their behavior using examples that reflect the desired input-output relationship.
+
+% This is typically done by optimizing the same next-token prediction objective, but on more narrowly defined data. Fine-tuning can involve updating all model parameters (full fine-tuning) or only a subset (parameter-efficient methods), depending on computational constraints. Variants such as instruction tuning and reinforcement learning from human feedback further improve a model's ability to follow instructions and align with human preferences.
+
+% Although fine-tuning can significantly improve task performance, it introduces challenges such as overfitting and potential loss of general capabilities.
+
+
+
+\section{Programming of Universal Robots Manipulators}
+Universal Robots (UR) manipulators support both graphical and textual approaches to robot programming. In practice, these approaches are closely integrated: robot applications are commonly developed through the graphical teach pendant environment, while execution on the robot controller is ultimately represented internally as URScript instructions. \cite{MartinRytterFiveWaysToProgramACobot}
+
+The primary development interface for UR systems is the teach pendant, which provides a graphical, node-based programming environment for constructing robot behavior. Programs are created by composing and configuring nodes representing actions such as robot motion, waiting conditions, control flow, and tool operations. This interface is designed to be user-friendly and accessible, allowing users to define waypoints directly on the robot and configure motion parameters through graphical forms.
+
+Programs created through the teach pendant are stored as project artifacts, represented as \texttt{.urpx} files. A \texttt{.urpx} file captures the complete program definition produced within the graphical environment, including the hierarchy of program nodes, configured parameters, waypoint references, and metadata required by the controller. Structurally, a UR program can be viewed as a hierarchical tree rooted in a main program node, where child nodes define execution order, control flow, and robot actions. Motion-related nodes typically reference named waypoints together with parameters such as speed, acceleration, blending radius, and movement type, while additional nodes may define loops, conditional logic, wait conditions, and I/O operations.
+
+The functionality of the programming environment can further be extended through URCaps, which are software extensions installed directly on the robot controller. URCaps enable developers and hardware vendors to integrate custom functionality into the teach pendant environment by introducing new program nodes and configuration interfaces beyond the standard functionality provided by the controller. In industrial applications, URCaps are commonly used to integrate peripherals and process-specific operations, including grippers, vision systems and sensors. Since URCaps integrate directly into the graphical workflow, their functionality also becomes embedded within the resulting program structure and execution model.
+
+Although the graphical programming interface simplifies robot development, more advanced robotic applications often require functionality and flexibility beyond what is practical to express through graphical nodes alone. For such applications, developers frequently rely on URScript, the domain-specific scripting language used internally by UR controllers. URScript resembles Python syntactically. Compared to graphical programming, URScript provides finer-grained control and greater expressiveness for implementing reusable logic, dynamic execution behavior, and integration with external systems. URScript programs may be written manually or generated automatically from higher-level representations, including teach pendant programs and URCaps.
+
+In addition to teach pendant programming and URScript, UR manipulators also support external control through network-based communication interfaces. External applications can exchange data with the controller and issue commands programmatically from separate computing systems. This capability is particularly valuable in research and experimental environments, where robotic systems are frequently integrated with external software. One example of this is the \texttt{ur\_rtde} library, which provides Python and C++ interfaces for communication with UR controllers through the Real-Time Data Exchange (RTDE) protocol \cite{lindvig2025ur_rtde}.

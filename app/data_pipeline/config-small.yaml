@@ -1,0 +1,29 @@
+# Data Pipeline Configuration
+
+# Database
+vector_store:
+  path: "database/vector_stores"
+
+program_store:
+  path: "database/program_database/programs.sqlite"
+
+# Embedding
+embedding:
+  model_name: "nomic-embed-text:v1.5"
+  base_url: "http://localhost:11434"
+  request_timeout_seconds: 60
+  batch_size: 64
+  embedding_dimension: 768 # Embedding model output dimension
+
+# Processing
+processing:
+  robot_programs:
+    dir: "data/robot-programs"
+    max_snippet_chars: 4000
+    code_action_context_window: 1 # include previous/next action names in chunk text
+
+  documentation:
+    dir: "data/docs"
+    chunk_size: 250 # tokens
+    overlap: 25 # tokens
+    min_chunk_tokens: 120 # merge chunks smaller than this into neighbors

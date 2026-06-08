@@ -1,0 +1,145 @@
+{
+  "n_participants": 5,
+  "correctness": {
+    "A_comprehension": {
+      "nonmissing": 30,
+      "total": 30,
+      "mean_completed_only": 1.0,
+      "mean_with_dnf_as_incorrect": 1.0
+    },
+    "A_modification": {
+      "nonmissing": 24,
+      "total": 25,
+      "mean_completed_only": 1.0,
+      "mean_with_dnf_as_incorrect": 0.96
+    },
+    "B_comprehension": {
+      "nonmissing": 30,
+      "total": 30,
+      "mean_completed_only": 0.9666666666666667,
+      "mean_with_dnf_as_incorrect": 0.9666666666666667
+    },
+    "B_modification": {
+      "nonmissing": 21,
+      "total": 25,
+      "mean_completed_only": 0.5952380952380952,
+      "mean_with_dnf_as_incorrect": 0.5
+    }
+  },
+  "timing": {
+    "A_comprehension": {
+      "participant_sum_sec": [
+        305.0,
+        125.0,
+        286.0,
+        157.0,
+        101.0
+      ],
+      "mean_minutes": 3.246666666666667,
+      "median_minutes": 2.6166666666666667,
+      "completed_participants": 5,
+      "task_completion_rate": 1.0
+    },
+    "A_modification": {
+      "participant_sum_sec": [
+        452.0,
+        242.0,
+        115.0,
+        46.0,
+        600.0
+      ],
+      "mean_minutes": 4.85,
+      "median_minutes": 4.033333333333333,
+      "completed_participants": 5,
+      "task_completion_rate": 0.96
+    },
+    "B_comprehension": {
+      "participant_sum_sec": [
+        371.0,
+        471.0,
+        116.0,
+        907.0,
+        227.0
+      ],
+      "mean_minutes": 6.973333333333333,
+      "median_minutes": 6.183333333333334,
+      "completed_participants": 5,
+      "task_completion_rate": 1.0
+    },
+    "B_modification": {
+      "participant_sum_sec": [
+        149.0,
+        183.0,
+        1002.0,
+        858.0,
+        752.0
+      ],
+      "mean_minutes": 9.813333333333333,
+      "median_minutes": 12.533333333333333,
+      "completed_participants": 5,
+      "task_completion_rate": 0.84
+    }
+  },
+  "ai_use": {
+    "overall_rate": 0.4727272727272727,
+    "total_used": 26,
+    "total_possible": 55,
+    "per_task_rate": {
+      "B: Identify the key actions used in the robotic program. ": 0.2,
+      "B:  Choose the correct sequence of actions in the order performed by the robot in the program. ": 0.2,
+      "B:  Choose the correct sequence of waypoints in the order they are reached by the robot in the program. ": 0.6,
+      "B: Does the program use any URCap?": 0.4,
+      "B: Which gripper does the program use?": 0.2,
+      "B: Which of the following overall applications best match the program.": 0.4,
+      "B: Modification 1.": 0.4,
+      "B: Modification 2.": 0.6,
+      "B: Modification 3.": 0.6,
+      "B: Modification 4.": 0.6,
+      "B: Modification 5.": 1.0
+    }
+  },
+  "confidence": {
+    "comprehension_baseline_mean": 4.4,
+    "comprehension_proposed_mean": 2.0,
+    "modification_baseline_mean": 3.4,
+    "modification_proposed_mean": 2.6
+  },
+  "assistant_logs": {
+    "session_count": 43,
+    "duration_seconds": {
+      "mean": 47.40801830232559,
+      "median": 42.557666,
+      "q25": 30.539866,
+      "q75": 63.082958500000004,
+      "min": 4.647604,
+      "max": 100.921653
+    },
+    "tool_calls": {
+      "mean": 2.5348837209302326,
+      "median": 2.0,
+      "min": 0.0,
+      "max": 5.0,
+      "distribution": {
+        "0": 5,
+        "1": 4,
+        "2": 13,
+        "3": 12,
+        "4": 2,
+        "5": 7
+      }
+    },
+    "embedding_time_ms_per_call": {
+      "mean": 4136.15374608871,
+      "median": 4134.204149246216,
+      "n": 109
+    },
+    "program_context": {
+      "true_count": 31,
+      "false_count": 12,
+      "duration_seconds_mean": {
+        "true": 49.639822580645166,
+        "false": 41.64252391666667
+      }
+    }
+  }
+}

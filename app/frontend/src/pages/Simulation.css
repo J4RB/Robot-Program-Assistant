@@ -1,0 +1,45 @@
+/* Simulation Page Styles */
+.simulation-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+}
+
+.simulation-placeholder {
+  text-align: center;
+  padding: 3rem;
+  background: var(--background-main);
+  border: 2px dashed var(--border-color);
+  border-radius: 0.75rem;
+  max-width: 500px;
+  color: var(--text-primary);
+}
+
+.simulation-placeholder h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.simulation-placeholder p {
+  color: var(--text-secondary);
+  margin: 0.5rem 0;
+}
+
+.placeholder-subtitle {
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .simulation-placeholder {
+    padding: 2rem;
+  }
+
+  .simulation-placeholder h2 {
+    font-size: 1.25rem;
+  }
+}

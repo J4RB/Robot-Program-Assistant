@@ -1,0 +1,1021 @@
+{
+  "session_id": "d7db539b-2697-4290-a4d0-95940cf9ebd5",
+  "start_time": "2026-05-18T21:59:49.701187+02:00",
+  "end_time": "2026-05-18T22:00:54.301743+02:00",
+  "event_count": 19,
+  "events": [
+    {
+      "timestamp": "2026-05-18T21:59:49.701932+02:00",
+      "type": "user_input",
+      "data": {
+        "query": "I need example code for my program editor to add a wait action",
+        "settings": {
+          "program_context": false,
+          "max_program_results": null,
+          "max_documentation_results": null,
+          "use_conversation_history": true
+        }
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:59:52.325529+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "wait action",
+        "limit": 5,
+        "step": 1
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:59:56.419496+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "wait action",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4093.790054321289,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-18T21:59:56.421353+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_code",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.5921086316160034,
+          "max": 0.6027398374128864,
+          "mean": 0.5974234662701137
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.6027398374128864,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 11,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[11]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1401,
+            "end_line": 1512,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#11",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 11,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[11]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1401,
+              "end_line": 1512
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.6027226404255177,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 6,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[6]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 750,
+            "end_line": 862,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#6",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 6,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[6]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 750,
+              "end_line": 862
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.5953034562813105,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 12,
+            "chunk_type": "robot_action",
+            "section_name": "moveL",
+            "snippet_path": "program.programContent.children[5].children[12]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1431,
+            "end_line": 1542,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#12",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 12,
+              "chunk_type": "robot_action",
+              "section_name": "moveL",
+              "snippet_path": "program.programContent.children[5].children[12]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1431,
+              "end_line": 1542
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.5942427656148502,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 6,
+            "chunk_type": "robot_action",
+            "section_name": "moveL",
+            "snippet_path": "program.programContent.children[5].children[6]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 750,
+            "end_line": 862,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#6",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 6,
+              "chunk_type": "robot_action",
+              "section_name": "moveL",
+              "snippet_path": "program.programContent.children[5].children[6]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 750,
+              "end_line": 862
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.",
+            "score": 0.5921086316160034,
+            "source": "robot_program_code",
+            "program_id": "program5",
+            "program_name": "Program5",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 0,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[0]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 69,
+            "end_line": 181,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program5#0",
+              "program_id": "program5",
+              "program_name": "Program5",
+              "chunk_text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.",
+              "chunk_index": 0,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[0]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 69,
+              "end_line": 181
+            }
+          }
+        ],
+        "step": 1,
+        "result_time_ms": 4095.566511154175
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:02.996290+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_documentation",
+        "query": "wait action code",
+        "limit": 5,
+        "step": 2
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:07.109291+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_documentation",
+        "query": "wait action code",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4112.767457962036,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:07.138744+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_documentation",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.5174845638663431,
+          "max": 0.6306505484095399,
+          "mean": 0.5595967691594349
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "16.3.28. Wait Description The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues. To access Wait command 2. Tap the Wait icon in the Commands toolbox. A node with two editable fields is inserted into the program tree: • Wait Type • Time 3. Tap the Wait Type field and choose Time. When you select this, the program waits for a number of specified seconds. 4. On the Time field, enter the Value and Expression, and tap Confirm. See Value-Variable-Expression Tabs. Software Handbook PolyScope X Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. 5. Tap the Wait Type field and choose Signal Input. When you choose this, additional fields are added to the right for you to specify the type of input. 8. In the Signal field, tap your preferred signal. • Digital signal: DI 0–DI 7 • Digital signal: CI 0–CI 7 • Analog signal: AI 0–AI 1 When a digital signal is selected, an Input field is inserted to the right. 9. Choose either High or Low. When an analog signal is selected, Operator and Input fields are inserted to the right. 12. Edit your Input field and Confirm. PolyScope X Software Handbook Copyright © 2009–2026 by Universal Robots A/S. All rights reserved.",
+            "score": 0.6306505484095399,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 87,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "PolyScope X_Handbook_en_Global",
+            "page_number": 195,
+            "source_file_path": "PolyScope X_Handbook_en_Global.pdf",
+            "raw_payload": {
+              "id": "PolyScope X_Handbook_en_Global#195#87",
+              "doc_name": "PolyScope X_Handbook_en_Global",
+              "page_number": 195,
+              "chunk_index": 87,
+              "chunk_text": "16.3.28. Wait Description The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues. To access Wait command 2. Tap the Wait icon in the Commands toolbox. A node with two editable fields is inserted into the program tree: • Wait Type • Time 3. Tap the Wait Type field and choose Time. When you select this, the program waits for a number of specified seconds. 4. On the Time field, enter the Value and Expression, and tap Confirm. See Value-Variable-Expression Tabs. Software Handbook PolyScope X Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. 5. Tap the Wait Type field and choose Signal Input. When you choose this, additional fields are added to the right for you to specify the type of input. 8. In the Signal field, tap your preferred signal. • Digital signal: DI 0–DI 7 • Digital signal: CI 0–CI 7 • Analog signal: AI 0–AI 1 When a digital signal is selected, an Input field is inserted to the right. 9. Choose either High or Low. When an analog signal is selected, Operator and Input fields are inserted to the right. 12. Edit your Input field and Confirm. PolyScope X Software Handbook Copyright © 2009–2026 by Universal Robots A/S. All rights reserved.",
+              "source_file_path": "PolyScope X_Handbook_en_Global.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "20.3.9. set_watchdog(frequency, action) Registers a new watchdog on the handle. This can only be called on a read handle. After the call, the new watchdog will start immediately. Calling multiple times on the same handle reconfigures watchdog with new parameters. Parameters frequency: A float, minimum allowed communication frequency. Allowed values are greater then 0 and lower or equal to 10 Hz. Fractional frequencies are allowed. action : An integer • 0: Ignore - no reaction when the watchdog times out. • 1: Pause - protective stop and the program will be paused. • 2: Stop - protective stop and the program will be stopped. Example cnc_status.set_watchdog(2.5, 1) Pause program if no data was received from master for more than 400ms. 20.3.10. start_watchdog() Method starts the watchdog. Throws a runtime error if watchdog is not registered. NOTE: Watchdog starts automatically when it's created. This function can be used in combination with stop_ watchdog(). 20.3.11. stop_watchdog() Method disables the watchdog. Throws a runtime error if watchdog is not registered. This method can be used to temporarily mute watchdog.",
+            "score": 0.5809896695119514,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 186,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 165,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#165#186",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 165,
+              "chunk_index": 186,
+              "chunk_text": "20.3.9. set_watchdog(frequency, action) Registers a new watchdog on the handle. This can only be called on a read handle. After the call, the new watchdog will start immediately. Calling multiple times on the same handle reconfigures watchdog with new parameters. Parameters frequency: A float, minimum allowed communication frequency. Allowed values are greater then 0 and lower or equal to 10 Hz. Fractional frequencies are allowed. action : An integer • 0: Ignore - no reaction when the watchdog times out. • 1: Pause - protective stop and the program will be paused. • 2: Stop - protective stop and the program will be stopped. Example cnc_status.set_watchdog(2.5, 1) Pause program if no data was received from master for more than 400ms. 20.3.10. start_watchdog() Method starts the watchdog. Throws a runtime error if watchdog is not registered. NOTE: Watchdog starts automatically when it's created. This function can be used in combination with stop_ watchdog(). 20.3.11. stop_watchdog() Method disables the watchdog. Throws a runtime error if watchdog is not registered. This method can be used to temporarily mute watchdog.",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "18.74. request_float_from_primary_client(message) Request input from operator. Polyscope shows dialog box with decimal number entry field. Function blocks until operator enters value on the Polyscope screen. NOTE: Operator can also stop program by pressing \"Cancel\" button Parameters message: A string with a message shown on Polyscope dialog box. Can not be empty. Return Value Float: Value entered by the operator. Example command: offset_mm = request_float_from_primary_client(\"Enter gripping offset [mm]\") Show message to the operator, and save reply to offset_mm variable",
+            "score": 0.539110989121996,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 167,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 149,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#149#167",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 149,
+              "chunk_index": 167,
+              "chunk_text": "18.74. request_float_from_primary_client(message) Request input from operator. Polyscope shows dialog box with decimal number entry field. Function blocks until operator enters value on the Polyscope screen. NOTE: Operator can also stop program by pressing \"Cancel\" button Parameters message: A string with a message shown on Polyscope dialog box. Can not be empty. Return Value Float: Value entered by the operator. Example command: offset_mm = request_float_from_primary_client(\"Enter gripping offset [mm]\") Show message to the operator, and save reply to offset_mm variable",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "18.41. rtde_set_watchdog(variable_name, min_ frequency, action=’pause’) This function will activate a watchdog for a particular input variable to the RTDE. When the watchdog did not receive an input update for the specified variable in the time period specified by min_frequency (Hz), the corresponding action will be taken. All watchdogs are removed on program stop. >>> rtde_set_watchdog(\"input_int_register_0\", 10, \"stop\") Parameters variable_name: Input variable name (string), as specified by the RTDE interface min_frequency: The minimum frequency (float) an input update is expected to arrive. action: Optional: Either \"ignore\", \"pause\" or \"stop\" the program on a violation of the minimum frequency. The default action is \"pause\". Return Value None Note: Only one watchdog is necessary per RTDE input package to guarantee the specified action on missing updates. Example command: rtde set watchdog( \"input int register 0\" , 10, \"stop\" ) • Example Parameters: • variable name = input int register 0 • min frequency = 10 hz • action = stop the program",
+            "score": 0.5297480748873439,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 150,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 134,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#134#150",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 134,
+              "chunk_index": 150,
+              "chunk_text": "18.41. rtde_set_watchdog(variable_name, min_ frequency, action=’pause’) This function will activate a watchdog for a particular input variable to the RTDE. When the watchdog did not receive an input update for the specified variable in the time period specified by min_frequency (Hz), the corresponding action will be taken. All watchdogs are removed on program stop. >>> rtde_set_watchdog(\"input_int_register_0\", 10, \"stop\") Parameters variable_name: Input variable name (string), as specified by the RTDE interface min_frequency: The minimum frequency (float) an input update is expected to arrive. action: Optional: Either \"ignore\", \"pause\" or \"stop\" the program on a violation of the minimum frequency. The default action is \"pause\". Return Value None Note: Only one watchdog is necessary per RTDE input package to guarantee the specified action on missing updates. Example command: rtde set watchdog( \"input int register 0\" , 10, \"stop\" ) • Example Parameters: • variable name = input int register 0 • min frequency = 10 hz • action = stop the program",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "15. Module motion Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. rotLimit: The maximum allowed rotational offset around any axis in radians. 15.40. pause_on_error_code(code, argument) Makes the robot pause if the specified error code occurs. The robot will only pause during program execution. This setting is reset when the program is stopped. Call the command again before/during program execution to re-enable it. >>> pause_on_error_code(173, 3) In the above example, the robot will pause on errors with code 173 if its argument equals 3 (corresponding to ’C173A3’ in the log). >>> pause_on_error_code(173) In the above example, the robot will pause on error code 173 for any argument value. Parameters code: The code of the error for which the robot should pause (int) argument: The argument of the error. If this parameter is omitted the robot will pause on any argument for the specified error code (int) Notes: • Error codes appear in the log as CxAy where 'x' is the code and 'y' is the argument.",
+            "score": 0.5174845638663431,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 69,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 60,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#60#69",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 60,
+              "chunk_index": 69,
+              "chunk_text": "15. Module motion Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. rotLimit: The maximum allowed rotational offset around any axis in radians. 15.40. pause_on_error_code(code, argument) Makes the robot pause if the specified error code occurs. The robot will only pause during program execution. This setting is reset when the program is stopped. Call the command again before/during program execution to re-enable it. >>> pause_on_error_code(173, 3) In the above example, the robot will pause on errors with code 173 if its argument equals 3 (corresponding to ’C173A3’ in the log). >>> pause_on_error_code(173) In the above example, the robot will pause on error code 173 for any argument value. Parameters code: The code of the error for which the robot should pause (int) argument: The argument of the error. If this parameter is omitted the robot will pause on any argument for the specified error code (int) Notes: • Error codes appear in the log as CxAy where 'x' is the code and 'y' is the argument.",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          }
+        ],
+        "step": 2,
+        "result_time_ms": 4142.133712768555
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:14.230088+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "wait pause action",
+        "limit": 5,
+        "step": 3
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:18.338330+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "wait pause action",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4108.083724975586,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:18.340569+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_code",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.5445955956029439,
+          "max": 0.5599744084188407,
+          "mean": 0.5521439032418929
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.5599744084188407,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 11,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[11]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1401,
+            "end_line": 1512,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#11",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 11,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[11]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1401,
+              "end_line": 1512
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.557723926436541,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 6,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[6]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 750,
+            "end_line": 862,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#6",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 6,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[6]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 750,
+              "end_line": 862
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.5503324735041633,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 12,
+            "chunk_type": "robot_action",
+            "section_name": "moveL",
+            "snippet_path": "program.programContent.children[5].children[12]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1431,
+            "end_line": 1542,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#12",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 12,
+              "chunk_type": "robot_action",
+              "section_name": "moveL",
+              "snippet_path": "program.programContent.children[5].children[12]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1431,
+              "end_line": 1542
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.5480931122469758,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 6,
+            "chunk_type": "robot_action",
+            "section_name": "moveL",
+            "snippet_path": "program.programContent.children[5].children[6]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 750,
+            "end_line": 862,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#6",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 6,
+              "chunk_type": "robot_action",
+              "section_name": "moveL",
+              "snippet_path": "program.programContent.children[5].children[6]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 750,
+              "end_line": 862
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.5445955956029439,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 17,
+            "chunk_type": "robot_action",
+            "section_name": "moveL",
+            "snippet_path": "program.programContent.children[5].children[17]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[17]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 2067,
+            "end_line": 2178,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#17",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 17,
+              "chunk_type": "robot_action",
+              "section_name": "moveL",
+              "snippet_path": "program.programContent.children[5].children[17]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[17]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 2067,
+              "end_line": 2178
+            }
+          }
+        ],
+        "step": 3,
+        "result_time_ms": 4110.255002975464
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:26.445384+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "wait pause",
+        "limit": 5,
+        "step": 4
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:30.551882+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_robot_code",
+        "query": "wait pause",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4106.328964233398,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:30.553713+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_robot_code",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.5726361687070715,
+          "max": 0.5825811520381632,
+          "mean": 0.5783982862926936
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.5825811520381632,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 11,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[11]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1401,
+            "end_line": 1512,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#11",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 11,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[11]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1401,
+              "end_line": 1512
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.5822543696019206,
+            "source": "robot_program_code",
+            "program_id": "program1",
+            "program_name": "Program1",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 6,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[6]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 750,
+            "end_line": 862,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program1#6",
+              "program_id": "program1",
+              "program_name": "Program1",
+              "chunk_text": "Program Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 6,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[6]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 750,
+              "end_line": 862
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.",
+            "score": 0.5773124441022112,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 12,
+            "chunk_type": "robot_action",
+            "section_name": "moveL",
+            "snippet_path": "program.programContent.children[5].children[12]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 1431,
+            "end_line": 1542,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#12",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.",
+              "chunk_index": 12,
+              "chunk_type": "robot_action",
+              "section_name": "moveL",
+              "snippet_path": "program.programContent.children[5].children[12]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 1431,
+              "end_line": 1542
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.",
+            "score": 0.5772072970141018,
+            "source": "robot_program_code",
+            "program_id": "program5",
+            "program_name": "Program5",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 0,
+            "chunk_type": "robot_action",
+            "section_name": "moveJ",
+            "snippet_path": "program.programContent.children[5].children[0]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 69,
+            "end_line": 181,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program5#0",
+              "program_id": "program5",
+              "program_name": "Program5",
+              "chunk_text": "Program Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.",
+              "chunk_index": 0,
+              "chunk_type": "robot_action",
+              "section_name": "moveJ",
+              "snippet_path": "program.programContent.children[5].children[0]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 69,
+              "end_line": 181
+            }
+          },
+          {
+            "id": null,
+            "text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+            "score": 0.5726361687070715,
+            "source": "robot_program_code",
+            "program_id": "program7",
+            "program_name": "Program7",
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 6,
+            "chunk_type": "robot_action",
+            "section_name": "moveL",
+            "snippet_path": "program.programContent.children[5].children[6]",
+            "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+            "start_line": 750,
+            "end_line": 862,
+            "doc_name": null,
+            "page_number": null,
+            "source_file_path": null,
+            "raw_payload": {
+              "id": "program7#6",
+              "program_id": "program7",
+              "program_name": "Program7",
+              "chunk_text": "Program Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.",
+              "chunk_index": 6,
+              "chunk_type": "robot_action",
+              "section_name": "moveL",
+              "snippet_path": "program.programContent.children[5].children[6]",
+              "snippet_text": "{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}",
+              "start_line": 750,
+              "end_line": 862
+            }
+          }
+        ],
+        "step": 4,
+        "result_time_ms": 4108.0827713012695
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:40.008682+02:00",
+      "type": "tool_call",
+      "data": {
+        "tool": "search_documentation",
+        "query": "wait command code example",
+        "limit": 5,
+        "step": 5
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:44.130002+02:00",
+      "type": "per_tool_embedding",
+      "data": {
+        "tool": "search_documentation",
+        "query": "wait command code example",
+        "embedding_dim": 4096,
+        "embedding_time_ms": 4121.105909347534,
+        "model_name": "qwen3-embedding:8b"
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:44.157551+02:00",
+      "type": "tool_result",
+      "data": {
+        "tool": "search_documentation",
+        "result_count": 5,
+        "score_range": {
+          "min": 0.5289357385865585,
+          "max": 0.6781914060834879,
+          "mean": 0.5732471971457114
+        },
+        "results": [
+          {
+            "id": null,
+            "text": "16.3.28. Wait Description The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues. To access Wait command 2. Tap the Wait icon in the Commands toolbox. A node with two editable fields is inserted into the program tree: • Wait Type • Time 3. Tap the Wait Type field and choose Time. When you select this, the program waits for a number of specified seconds. 4. On the Time field, enter the Value and Expression, and tap Confirm. See Value-Variable-Expression Tabs. Software Handbook PolyScope X Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. 5. Tap the Wait Type field and choose Signal Input. When you choose this, additional fields are added to the right for you to specify the type of input. 8. In the Signal field, tap your preferred signal. • Digital signal: DI 0–DI 7 • Digital signal: CI 0–CI 7 • Analog signal: AI 0–AI 1 When a digital signal is selected, an Input field is inserted to the right. 9. Choose either High or Low. When an analog signal is selected, Operator and Input fields are inserted to the right. 12. Edit your Input field and Confirm. PolyScope X Software Handbook Copyright © 2009–2026 by Universal Robots A/S. All rights reserved.",
+            "score": 0.6781914060834879,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 87,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "PolyScope X_Handbook_en_Global",
+            "page_number": 195,
+            "source_file_path": "PolyScope X_Handbook_en_Global.pdf",
+            "raw_payload": {
+              "id": "PolyScope X_Handbook_en_Global#195#87",
+              "doc_name": "PolyScope X_Handbook_en_Global",
+              "page_number": 195,
+              "chunk_index": 87,
+              "chunk_text": "16.3.28. Wait Description The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues. To access Wait command 2. Tap the Wait icon in the Commands toolbox. A node with two editable fields is inserted into the program tree: • Wait Type • Time 3. Tap the Wait Type field and choose Time. When you select this, the program waits for a number of specified seconds. 4. On the Time field, enter the Value and Expression, and tap Confirm. See Value-Variable-Expression Tabs. Software Handbook PolyScope X Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. 5. Tap the Wait Type field and choose Signal Input. When you choose this, additional fields are added to the right for you to specify the type of input. 8. In the Signal field, tap your preferred signal. • Digital signal: DI 0–DI 7 • Digital signal: CI 0–CI 7 • Analog signal: AI 0–AI 1 When a digital signal is selected, an Input field is inserted to the right. 9. Choose either High or Low. When an analog signal is selected, Operator and Input fields are inserted to the right. 12. Edit your Input field and Confirm. PolyScope X Software Handbook Copyright © 2009–2026 by Universal Robots A/S. All rights reserved.",
+              "source_file_path": "PolyScope X_Handbook_en_Global.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "20.3.9. set_watchdog(frequency, action) Registers a new watchdog on the handle. This can only be called on a read handle. After the call, the new watchdog will start immediately. Calling multiple times on the same handle reconfigures watchdog with new parameters. Parameters frequency: A float, minimum allowed communication frequency. Allowed values are greater then 0 and lower or equal to 10 Hz. Fractional frequencies are allowed. action : An integer • 0: Ignore - no reaction when the watchdog times out. • 1: Pause - protective stop and the program will be paused. • 2: Stop - protective stop and the program will be stopped. Example cnc_status.set_watchdog(2.5, 1) Pause program if no data was received from master for more than 400ms. 20.3.10. start_watchdog() Method starts the watchdog. Throws a runtime error if watchdog is not registered. NOTE: Watchdog starts automatically when it's created. This function can be used in combination with stop_ watchdog(). 20.3.11. stop_watchdog() Method disables the watchdog. Throws a runtime error if watchdog is not registered. This method can be used to temporarily mute watchdog.",
+            "score": 0.5676396937830741,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 186,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 165,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#165#186",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 165,
+              "chunk_index": 186,
+              "chunk_text": "20.3.9. set_watchdog(frequency, action) Registers a new watchdog on the handle. This can only be called on a read handle. After the call, the new watchdog will start immediately. Calling multiple times on the same handle reconfigures watchdog with new parameters. Parameters frequency: A float, minimum allowed communication frequency. Allowed values are greater then 0 and lower or equal to 10 Hz. Fractional frequencies are allowed. action : An integer • 0: Ignore - no reaction when the watchdog times out. • 1: Pause - protective stop and the program will be paused. • 2: Stop - protective stop and the program will be stopped. Example cnc_status.set_watchdog(2.5, 1) Pause program if no data was received from master for more than 400ms. 20.3.10. start_watchdog() Method starts the watchdog. Throws a runtime error if watchdog is not registered. NOTE: Watchdog starts automatically when it's created. This function can be used in combination with stop_ watchdog(). 20.3.11. stop_watchdog() Method disables the watchdog. Throws a runtime error if watchdog is not registered. This method can be used to temporarily mute watchdog.",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "18.74. request_float_from_primary_client(message) Request input from operator. Polyscope shows dialog box with decimal number entry field. Function blocks until operator enters value on the Polyscope screen. NOTE: Operator can also stop program by pressing \"Cancel\" button Parameters message: A string with a message shown on Polyscope dialog box. Can not be empty. Return Value Float: Value entered by the operator. Example command: offset_mm = request_float_from_primary_client(\"Enter gripping offset [mm]\") Show message to the operator, and save reply to offset_mm variable",
+            "score": 0.5621583596045863,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 167,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 149,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#149#167",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 149,
+              "chunk_index": 167,
+              "chunk_text": "18.74. request_float_from_primary_client(message) Request input from operator. Polyscope shows dialog box with decimal number entry field. Function blocks until operator enters value on the Polyscope screen. NOTE: Operator can also stop program by pressing \"Cancel\" button Parameters message: A string with a message shown on Polyscope dialog box. Can not be empty. Return Value Float: Value entered by the operator. Example command: offset_mm = request_float_from_primary_client(\"Enter gripping offset [mm]\") Show message to the operator, and save reply to offset_mm variable",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "10. Threads Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. It should be noted that even though the sleep instruction does not control the robot, it still uses “physical” time. The same is true for the sync instruction. Inserting sync or sleep will allow time for other threads to be executed and is therefore recommended to use next to computational heavy instructions or inside infinite loops that do not control the robot, otherwise an exception like \"Lost communication with Controller\" can be raised with a consequent protective stop. PolyScope X 18 Script Directory 11. Program Label Program label code lines, with an “$” as first symbol, are special lines in programs generated by PolyScope that make it possible to track the execution of a program. $ 2 \"var_1= True\" global var_1= True Script Directory 19 PolyScope X",
+            "score": 0.5293107876708504,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 21,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 30,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#30#21",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 30,
+              "chunk_index": 21,
+              "chunk_text": "10. Threads Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. It should be noted that even though the sleep instruction does not control the robot, it still uses “physical” time. The same is true for the sync instruction. Inserting sync or sleep will allow time for other threads to be executed and is therefore recommended to use next to computational heavy instructions or inside infinite loops that do not control the robot, otherwise an exception like \"Lost communication with Controller\" can be raised with a consequent protective stop. PolyScope X 18 Script Directory 11. Program Label Program label code lines, with an “$” as first symbol, are special lines in programs generated by PolyScope that make it possible to track the execution of a program. $ 2 \"var_1= True\" global var_1= True Script Directory 19 PolyScope X",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          },
+          {
+            "id": null,
+            "text": "18.41. rtde_set_watchdog(variable_name, min_ frequency, action=’pause’) This function will activate a watchdog for a particular input variable to the RTDE. When the watchdog did not receive an input update for the specified variable in the time period specified by min_frequency (Hz), the corresponding action will be taken. All watchdogs are removed on program stop. >>> rtde_set_watchdog(\"input_int_register_0\", 10, \"stop\") Parameters variable_name: Input variable name (string), as specified by the RTDE interface min_frequency: The minimum frequency (float) an input update is expected to arrive. action: Optional: Either \"ignore\", \"pause\" or \"stop\" the program on a violation of the minimum frequency. The default action is \"pause\". Return Value None Note: Only one watchdog is necessary per RTDE input package to guarantee the specified action on missing updates. Example command: rtde set watchdog( \"input int register 0\" , 10, \"stop\" ) • Example Parameters: • variable name = input int register 0 • min frequency = 10 hz • action = stop the program",
+            "score": 0.5289357385865585,
+            "source": "documentation",
+            "program_id": null,
+            "program_name": null,
+            "robot_type": null,
+            "application_type": null,
+            "chunk_index": 150,
+            "chunk_type": null,
+            "section_name": null,
+            "snippet_path": null,
+            "snippet_text": null,
+            "start_line": null,
+            "end_line": null,
+            "doc_name": "script_directory_PolyscopeX",
+            "page_number": 134,
+            "source_file_path": "script_directory_PolyscopeX.pdf",
+            "raw_payload": {
+              "id": "script_directory_PolyscopeX#134#150",
+              "doc_name": "script_directory_PolyscopeX",
+              "page_number": 134,
+              "chunk_index": 150,
+              "chunk_text": "18.41. rtde_set_watchdog(variable_name, min_ frequency, action=’pause’) This function will activate a watchdog for a particular input variable to the RTDE. When the watchdog did not receive an input update for the specified variable in the time period specified by min_frequency (Hz), the corresponding action will be taken. All watchdogs are removed on program stop. >>> rtde_set_watchdog(\"input_int_register_0\", 10, \"stop\") Parameters variable_name: Input variable name (string), as specified by the RTDE interface min_frequency: The minimum frequency (float) an input update is expected to arrive. action: Optional: Either \"ignore\", \"pause\" or \"stop\" the program on a violation of the minimum frequency. The default action is \"pause\". Return Value None Note: Only one watchdog is necessary per RTDE input package to guarantee the specified action on missing updates. Example command: rtde set watchdog( \"input int register 0\" , 10, \"stop\" ) • Example Parameters: • variable name = input int register 0 • min frequency = 10 hz • action = stop the program",
+              "source_file_path": "script_directory_PolyscopeX.pdf"
+            }
+          }
+        ],
+        "step": 5,
+        "result_time_ms": 4148.538112640381
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:44.158918+02:00",
+      "type": "llm_synthesis_prompt",
+      "data": {
+        "system_prompt": "Synthesis LLM prompt",
+        "user_query": "I need example code for my program editor to add a wait action",
+        "context": "## Retrieved Information:\n\n**Source 1 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 2 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 3 (robot_program_code):**\nProgram Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 4 (robot_program_code):**\nProgram Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 5 (robot_program_code):**\nProgram Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 6 (documentation):**\n16.3.28. Wait Description The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues. To access Wait command 2. Tap the Wait icon in the Commands toolbox. A node with two editable fields is inserted into the program tree: • Wait Type • Time 3. Tap the Wait Type field and choose Time. When you select this, the program waits for a number of specified seconds. 4. On the Time field, enter the Value and Expression, and tap Confirm. See Value-Variable-Expression Tabs. Software Handbook PolyScope X Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. 5. Tap the Wait Type field and choose Signal Input. When you choose this, additional fields are added to the right for you to specify the type of input. 8. In the Signal field, tap your preferred signal. • Digital signal: DI 0–DI 7 • Digital signal: CI 0–CI 7 • Analog signal: AI 0–AI 1 When a digital signal is selected, an Input field is inserted to the right. 9. Choose either High or Low. When an analog signal is selected, Operator and Input fields are inserted to the right. 12. Edit your Input field and Confirm. PolyScope X Software Handbook Copyright © 2009–2026 by Universal Robots A/S. All rights reserved.\n\n**Source 7 (documentation):**\n20.3.9. set_watchdog(frequency, action) Registers a new watchdog on the handle. This can only be called on a read handle. After the call, the new watchdog will start immediately. Calling multiple times on the same handle reconfigures watchdog with new parameters. Parameters frequency: A float, minimum allowed communication frequency. Allowed values are greater then 0 and lower or equal to 10 Hz. Fractional frequencies are allowed. action : An integer • 0: Ignore - no reaction when the watchdog times out. • 1: Pause - protective stop and the program will be paused. • 2: Stop - protective stop and the program will be stopped. Example cnc_status.set_watchdog(2.5, 1) Pause program if no data was received from master for more than 400ms. 20.3.10. start_watchdog() Method starts the watchdog. Throws a runtime error if watchdog is not registered. NOTE: Watchdog starts automatically when it's created. This function can be used in combination with stop_ watchdog(). 20.3.11. stop_watchdog() Method disables the watchdog. Throws a runtime error if watchdog is not registered. This method can be used to temporarily mute watchdog.\n\n**Source 8 (documentation):**\n18.74. request_float_from_primary_client(message) Request input from operator. Polyscope shows dialog box with decimal number entry field. Function blocks until operator enters value on the Polyscope screen. NOTE: Operator can also stop program by pressing \"Cancel\" button Parameters message: A string with a message shown on Polyscope dialog box. Can not be empty. Return Value Float: Value entered by the operator. Example command: offset_mm = request_float_from_primary_client(\"Enter gripping offset [mm]\") Show message to the operator, and save reply to offset_mm variable\n\n**Source 9 (documentation):**\n18.41. rtde_set_watchdog(variable_name, min_ frequency, action=’pause’) This function will activate a watchdog for a particular input variable to the RTDE. When the watchdog did not receive an input update for the specified variable in the time period specified by min_frequency (Hz), the corresponding action will be taken. All watchdogs are removed on program stop. >>> rtde_set_watchdog(\"input_int_register_0\", 10, \"stop\") Parameters variable_name: Input variable name (string), as specified by the RTDE interface min_frequency: The minimum frequency (float) an input update is expected to arrive. action: Optional: Either \"ignore\", \"pause\" or \"stop\" the program on a violation of the minimum frequency. The default action is \"pause\". Return Value None Note: Only one watchdog is necessary per RTDE input package to guarantee the specified action on missing updates. Example command: rtde set watchdog( \"input int register 0\" , 10, \"stop\" ) • Example Parameters: • variable name = input int register 0 • min frequency = 10 hz • action = stop the program\n\n**Source 10 (documentation):**\n15. Module motion Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. rotLimit: The maximum allowed rotational offset around any axis in radians. 15.40. pause_on_error_code(code, argument) Makes the robot pause if the specified error code occurs. The robot will only pause during program execution. This setting is reset when the program is stopped. Call the command again before/during program execution to re-enable it. >>> pause_on_error_code(173, 3) In the above example, the robot will pause on errors with code 173 if its argument equals 3 (corresponding to ’C173A3’ in the log). >>> pause_on_error_code(173) In the above example, the robot will pause on error code 173 for any argument value. Parameters code: The code of the error for which the robot should pause (int) argument: The argument of the error. If this parameter is omitted the robot will pause on any argument for the specified error code (int) Notes: • Error codes appear in the log as CxAy where 'x' is the code and 'y' is the argument.\n\n**Source 11 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 12 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 13 (robot_program_code):**\nProgram Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 14 (robot_program_code):**\nProgram Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 15 (robot_program_code):**\nProgram Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[17]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 16 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[11]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.5632826685905457,\n        \"shoulder\": -1.6403519115843714,\n        \"elbow\": 2.381404225026266,\n        \"wrist1\": -3.3207413158812464,\n        \"wrist2\": -1.4867108503924769,\n        \"wrist3\": 1.5698044300079346\n      },\n      \"pose\": {\n        \"x\": -0.2589747125632707,\n        \"y\": -0.33227652008495095,\n        \"z\": 0.3525207137619785,\n        \"rx\": 2.369514114875934,\n        \"ry\": 0.757088971880934,\n        \"rz\": -1.2901058745766347\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 17 (robot_program_code):**\nProgram Program1 action snippet. Action: moveJ; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": 0.0482884906232357,\n        \"shoulder\": -2.278511186639303,\n        \"elbow\": 2.435761276875631,\n        \"wrist1\": -2.634407182733053,\n        \"wrist2\": -2.072821919118063,\n        \"wrist3\": 2.0103752613067627\n      },\n      \"pose\": {\n        \"x\": -0.2369322679328399,\n        \"y\": -0.09737804326246172,\n        \"z\": 0.44808151739746016,\n        \"rx\": 2.8303438643499166,\n        \"ry\": -0.9293751031276849,\n        \"rz\": -1.5856380630674063\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 18 (robot_program_code):**\nProgram Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveL.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[12]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.07042152086366826,\n        \"shoulder\": -1.2788484555533906,\n        \"elbow\": 2.414224449788229,\n        \"wrist1\": -3.713698526422018,\n        \"wrist2\": -1.8641918341266077,\n        \"wrist3\": -1.4284103552447718\n      },\n      \"pose\": {\n        \"x\": -0.4274647707721217,\n        \"y\": -0.07569519104179631,\n        \"z\": 0.2470165546004536,\n        \"rx\": 0.752215534418728,\n        \"ry\": 4.046337373352196,\n        \"rz\": 0.5201434035151203\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 19 (robot_program_code):**\nProgram Program5 action snippet. Action: moveJ; Node type: ur-move-to; Label: Point | base | Tool_flange | 30 % | 9 %; moveType: moveJ; variable: Point; Next actions: release.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveJ\",\n  \"label\": \"Point | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[0]\",\n  \"parameters\": {\n    \"moveType\": \"moveJ\",\n    \"variable\": \"Point\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"ed4b1590-86a0-2825-7bca-04f14fc19d2d\"\n      },\n      \"qNear\": {\n        \"base\": -0.4375703970538538,\n        \"shoulder\": -2.438235422173971,\n        \"elbow\": 2.1635664145099085,\n        \"wrist1\": -2.349846979180807,\n        \"wrist2\": -1.8740180174456995,\n        \"wrist3\": 1.7291882038116455\n      },\n      \"pose\": {\n        \"x\": -0.21207388627523546,\n        \"y\": -0.015320965777076388,\n        \"z\": 0.5828085869656595,\n        \"rx\": 2.8772165606832503,\n        \"ry\": -1.165949622173297,\n        \"rz\": -1.7165016885048487\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 1.04719755,\n        \"acceleration\": 1.3962633999999998,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 20 (robot_program_code):**\nProgram Program7 action snippet. Action: moveL; Node type: ur-move-to; Label: Intermittent | base | Tool_flange | 30 % | 9 %; moveType: moveL; variable: Intermittent; Previous actions: moveL; Next actions: moveJ.\n{\n  \"node_type\": \"ur-move-to\",\n  \"action_name\": \"moveL\",\n  \"label\": \"Intermittent | base | Tool_flange | 30 % | 9 %\",\n  \"path\": \"program.programContent.children[5].children[6]\",\n  \"parameters\": {\n    \"moveType\": \"moveL\",\n    \"variable\": \"Intermittent\",\n    \"waypoint\": {\n      \"frame\": \"base\",\n      \"tcp\": {\n        \"name\": \"Tool_flange\",\n        \"id\": \"b912e0a8-2c8b-5258-6817-2e4393e38c8f\"\n      },\n      \"qNear\": {\n        \"base\": -0.84558612505068,\n        \"shoulder\": -2.778041025201315,\n        \"elbow\": 1.9435456434832972,\n        \"wrist1\": -1.1428991121104737,\n        \"wrist2\": -0.5866192022906702,\n        \"wrist3\": 0.29113250970840454\n      },\n      \"pose\": {\n        \"x\": -0.1486405499774042,\n        \"y\": -0.1576992814050912,\n        \"z\": 0.5919033509866932,\n        \"rx\": 2.4829455907010054,\n        \"ry\": 0.8377563608491617,\n        \"rz\": -1.4730492420571717\n      }\n    },\n    \"advanced\": {\n      \"speed\": {\n        \"speed\": 0.25,\n        \"acceleration\": 1.2,\n        \"motionValue\": \"OptiMove\",\n        \"optiMoveSpeed\": 30,\n        \"optiMoveAcceleration\": 9\n      },\n      \"blend\": {\n        \"enabled\": false\n      },\n      \"transform\": {\n        \"transform\": false\n      }\n    }\n  }\n}\n\n**Source 21 (documentation):**\n16.3.28. Wait Description The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues. To access Wait command 2. Tap the Wait icon in the Commands toolbox. A node with two editable fields is inserted into the program tree: • Wait Type • Time 3. Tap the Wait Type field and choose Time. When you select this, the program waits for a number of specified seconds. 4. On the Time field, enter the Value and Expression, and tap Confirm. See Value-Variable-Expression Tabs. Software Handbook PolyScope X Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. 5. Tap the Wait Type field and choose Signal Input. When you choose this, additional fields are added to the right for you to specify the type of input. 8. In the Signal field, tap your preferred signal. • Digital signal: DI 0–DI 7 • Digital signal: CI 0–CI 7 • Analog signal: AI 0–AI 1 When a digital signal is selected, an Input field is inserted to the right. 9. Choose either High or Low. When an analog signal is selected, Operator and Input fields are inserted to the right. 12. Edit your Input field and Confirm. PolyScope X Software Handbook Copyright © 2009–2026 by Universal Robots A/S. All rights reserved.\n\n**Source 22 (documentation):**\n20.3.9. set_watchdog(frequency, action) Registers a new watchdog on the handle. This can only be called on a read handle. After the call, the new watchdog will start immediately. Calling multiple times on the same handle reconfigures watchdog with new parameters. Parameters frequency: A float, minimum allowed communication frequency. Allowed values are greater then 0 and lower or equal to 10 Hz. Fractional frequencies are allowed. action : An integer • 0: Ignore - no reaction when the watchdog times out. • 1: Pause - protective stop and the program will be paused. • 2: Stop - protective stop and the program will be stopped. Example cnc_status.set_watchdog(2.5, 1) Pause program if no data was received from master for more than 400ms. 20.3.10. start_watchdog() Method starts the watchdog. Throws a runtime error if watchdog is not registered. NOTE: Watchdog starts automatically when it's created. This function can be used in combination with stop_ watchdog(). 20.3.11. stop_watchdog() Method disables the watchdog. Throws a runtime error if watchdog is not registered. This method can be used to temporarily mute watchdog.\n\n**Source 23 (documentation):**\n18.74. request_float_from_primary_client(message) Request input from operator. Polyscope shows dialog box with decimal number entry field. Function blocks until operator enters value on the Polyscope screen. NOTE: Operator can also stop program by pressing \"Cancel\" button Parameters message: A string with a message shown on Polyscope dialog box. Can not be empty. Return Value Float: Value entered by the operator. Example command: offset_mm = request_float_from_primary_client(\"Enter gripping offset [mm]\") Show message to the operator, and save reply to offset_mm variable\n\n**Source 24 (documentation):**\n10. Threads Copyright © 2009–2026 by Universal Robots A/S. All rights reserved. It should be noted that even though the sleep instruction does not control the robot, it still uses “physical” time. The same is true for the sync instruction. Inserting sync or sleep will allow time for other threads to be executed and is therefore recommended to use next to computational heavy instructions or inside infinite loops that do not control the robot, otherwise an exception like \"Lost communication with Controller\" can be raised with a consequent protective stop. PolyScope X 18 Script Directory 11. Program Label Program label code lines, with an “$” as first symbol, are special lines in programs generated by PolyScope that make it possible to track the execution of a program. $ 2 \"var_1= True\" global var_1= True Script Directory 19 PolyScope X\n\n**Source 25 (documentation):**\n18.41. rtde_set_watchdog(variable_name, min_ frequency, action=’pause’) This function will activate a watchdog for a particular input variable to the RTDE. When the watchdog did not receive an input update for the specified variable in the time period specified by min_frequency (Hz), the corresponding action will be taken. All watchdogs are removed on program stop. >>> rtde_set_watchdog(\"input_int_register_0\", 10, \"stop\") Parameters variable_name: Input variable name (string), as specified by the RTDE interface min_frequency: The minimum frequency (float) an input update is expected to arrive. action: Optional: Either \"ignore\", \"pause\" or \"stop\" the program on a violation of the minimum frequency. The default action is \"pause\". Return Value None Note: Only one watchdog is necessary per RTDE input package to guarantee the specified action on missing updates. Example command: rtde set watchdog( \"input int register 0\" , 10, \"stop\" ) • Example Parameters: • variable name = input int register 0 • min frequency = 10 hz • action = stop the program",
+        "context_length": 32052,
+        "history": [],
+        "history_length": 0
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:54.301550+02:00",
+      "type": "llm_response",
+      "data": {
+        "response_text": "## Wait Actions in UR Robot Programming\n\nTo add a wait action to your UR robot program, you can use the **Wait** command. This command pauses the robot's movement when new inputs are introduced into the program.\n\n### Wait Command Types\n\nThere are two main ways to add a wait action to your program:\n\n#### 1. Wait for a Specific Time\n- **Wait Type**: Select \"Time\"\n- **Time Field**: Enter the number of seconds you want the robot to wait.\n- **Example**: If you want the robot to wait 5 seconds, enter `5` in the Time field.\n\n#### 2. Wait for a Sensor Signal\n- **Wait Type**: Select \"Signal Input\"\n- **Signal Field**: Choose the type of signal (e.g., Digital signal: DI 0–DI 7, CI 0–CI 7, or Analog signal: AI 0–AI 1).\n- **Input Field**: Specify the signal name (e.g., `DI 0`, `AI 0`, `CI 0`).\n- **Operator Field**: Choose the logic (High or Low).\n- **Confirm**: Save the configuration.\n\n### Implementation Example\n\nHere is a simplified example of how you might structure a program with a wait action:\n\n```python\n# Example Program Structure\nmoveL\nwait(5)  # Wait for 5 seconds\nmoveJ\n```\n\n### Additional Context\n\n- **Wait Description**: The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues.\n- **Signal Inputs**: When using signal inputs, you can choose between:\n  - **Digital signals**: DI 0–DI 7 or CI 0–CI 7\n  - **Analog signals**: AI 0–AI 1\n- **Time Calculation**: The Wait command waits for a specified number of seconds.\n\n### Limitations\n\n- **Physical Time**: Even though the sleep instruction does not control the robot, it still uses \"physical\" time.\n- **Thread Safety**: Inserting `sleep` or `sync` instructions allows time for other threads to be executed and is recommended to use next to computational heavy instructions or inside infinite loops that do not control the robot. Otherwise, an exception like \"Lost communication with Controller\" can be raised with a consequent protective stop.\n- **Watchdog**: While not directly related to the Wait command, the `set_watchdog` function can be used to pause the program if no data was received from the master for more than a specified time (e.g., 400ms).\n\n### Note on Context\n\nThe provided context includes examples of UR robot programming actions (like `moveJ` and `moveL`) and documentation on the Wait command. However, the specific syntax for the Wait command in your program editor may vary slightly depending on the specific version of the PolyScope X software you are using. The examples above provide a general understanding of how the Wait command works.",
+        "response_time_ms": 10142.605781555176,
+        "token_estimate": null
+      }
+    },
+    {
+      "timestamp": "2026-05-18T22:00:54.301727+02:00",
+      "type": "final_output",
+      "data": {
+        "response_text": "## Wait Actions in UR Robot Programming\n\nTo add a wait action to your UR robot program, you can use the **Wait** command. This command pauses the robot's movement when new inputs are introduced into the program.\n\n### Wait Command Types\n\nThere are two main ways to add a wait action to your program:\n\n#### 1. Wait for a Specific Time\n- **Wait Type**: Select \"Time\"\n- **Time Field**: Enter the number of seconds you want the robot to wait.\n- **Example**: If you want the robot to wait 5 seconds, enter `5` in the Time field.\n\n#### 2. Wait for a Sensor Signal\n- **Wait Type**: Select \"Signal Input\"\n- **Signal Field**: Choose the type of signal (e.g., Digital signal: DI 0–DI 7, CI 0–CI 7, or Analog signal: AI 0–AI 1).\n- **Input Field**: Specify the signal name (e.g., `DI 0`, `AI 0`, `CI 0`).\n- **Operator Field**: Choose the logic (High or Low).\n- **Confirm**: Save the configuration.\n\n### Implementation Example\n\nHere is a simplified example of how you might structure a program with a wait action:\n\n```python\n# Example Program Structure\nmoveL\nwait(5)  # Wait for 5 seconds\nmoveJ\n```\n\n### Additional Context\n\n- **Wait Description**: The Wait command pauses the robot's movement when new inputs are introduced into the program. You can add a Wait command to a program with external sensors to make the robot wait for one of the sensors to activate before the program continues.\n- **Signal Inputs**: When using signal inputs, you can choose between:\n  - **Digital signals**: DI 0–DI 7 or CI 0–CI 7\n  - **Analog signals**: AI 0–AI 1\n- **Time Calculation**: The Wait command waits for a specified number of seconds.\n\n### Limitations\n\n- **Physical Time**: Even though the sleep instruction does not control the robot, it still uses \"physical\" time.\n- **Thread Safety**: Inserting `sleep` or `sync` instructions allows time for other threads to be executed and is recommended to use next to computational heavy instructions or inside infinite loops that do not control the robot. Otherwise, an exception like \"Lost communication with Controller\" can be raised with a consequent protective stop.\n- **Watchdog**: While not directly related to the Wait command, the `set_watchdog` function can be used to pause the program if no data was received from the master for more than a specified time (e.g., 400ms).\n\n### Note on Context\n\nThe provided context includes examples of UR robot programming actions (like `moveJ` and `moveL`) and documentation on the Wait command. However, the specific syntax for the Wait command in your program editor may vary slightly depending on the specific version of the PolyScope X software you are using. The examples above provide a general understanding of how the Wait command works.",
+        "source_count": 25,
+        "sources_by_collection": {
+          "robot_program_code": 15,
+          "documentation": 10
+        },
+        "total_time_ms": 64600.55422782898,
+        "session_id": "d7db539b-2697-4290-a4d0-95940cf9ebd5"
+      }
+    }
+  ]
+}

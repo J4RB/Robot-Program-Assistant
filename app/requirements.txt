@@ -1,0 +1,20 @@
+# Core Web Framework
+fastapi>=0.100.0,<1.0.0
+uvicorn[standard]>=0.23.0,<1.0.0
+
+# Data Pipeline & Embeddings
+numpy>=2.1.0,<3.0.0
+pymupdf>=1.23.5,<2.0.0
+
+# Vector Database
+qdrant-client>=1.7.1,<2.0.0
+
+# LLM & Retrieval-Augmented Generation
+langchain-core>=0.1.0,<1.0.0
+langchain-ollama>=0.1.0,<1.0.0
+
+# Configuration & Utilities
+pydantic>=2.0.0,<3.0.0
+pyyaml>=6.0,<7.0.0
+tqdm>=4.66.1,<5.0.0
+tzdata>=2024.1,<2025.0
